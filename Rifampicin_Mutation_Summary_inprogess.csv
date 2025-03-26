@@ -1,0 +1,11 @@
+Species,Strand,Gene,Mutation,Position,Nucleotide Start,Nucleotide End,Type,Resistance,Group,Source,Evidence,Note
+Mycobacterium tuberculosis,+,rpoB,S450L,761155,761155,761157,Missense,RNAP site,MTBC,Goldstein (2014),Literature review,Common clinical
+Mycobacterium tuberculosis,+,rpoB,H526Y,761368,761368,761370,Missense,RNAP site,MTBC,Goldstein (2014),Literature review,Common in MDR
+Mycobacterium smegmatis,+,rpoB,Induced mismatch,,,,Artificial mismatch,,Non-tuberculosis mycobacteria,Amplicon (SRX24377969),Experimental (synthetic),Synthetic RIF-selected
+Pseudomonas aeruginosa,+,rpoB,H531R,531,,,Missense,RNAP site,Non-tuberculosis,"MacLean et al., 2014",Experimental,Reduces rifampin binding
+Pseudomonas aeruginosa,+,rpoB,D521G,521,,,Missense,RNAP site,Non-tuberculosis,"MacLean et al., 2014",Experimental,Reduces transcription efficiency
+Pseudomonas aeruginosa,+,rpoB,Q518R,518,,,Missense,Epistatic with E528D,Non-tuberculosis,"MacLean et al., 2014",Experimental,Epistasis with E528D
+Pseudomonas aeruginosa,+,rpoB,H531Y,531,,,Missense,RNAP site,Non-tuberculosis,"MacLean et al., 2014",Experimental,Disrupts expression
+Pseudomonas aeruginosa,+,rpoB,S536F,536,,,Missense,RNAP site,Non-tuberculosis,"MacLean et al., 2014",Experimental,Low-cost resistance
+Pseudomonas aeruginosa,+,rpoB,H531C,531,,,Missense,Compensatory,Non-tuberculosis,"MacLean et al., 2014",Experimental,Improves RNAP function
+Pseudomonas spp.,+,rpoB,"A1553G, A1562G, C1591T, A1592G",1553¨C1592 (nt),1553,1592,Nucleotide substitutions,Epistasis,Non-tuberculosis,"Vogwill et al., 2016",Experimental,Epistatic patterns across Pseudomonas
