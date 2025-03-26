@@ -1,0 +1,8 @@
+Broad plan for project:
+
+1. Use ASReview to find papers reporting RIF resistance mutations
+2. Add data to our dataset of reported RIF resistance mutations
+	2.1 Assess overlap: which papers do we already have?
+	2.2 For some (or all) papers that we haven't covered already, add new data
+3. Use unsupervised ML methods to identify clustering of mutations and species
+4. Use supervised ML methods to predict what mutations should be observed in a species
