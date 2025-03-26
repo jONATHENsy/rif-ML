@@ -1,6 +1,9 @@
 Broad plan for project:
 
 1. Use ASReview to find papers reporting RIF resistance mutations
+	- Search term used: XXX
+	- Papers found:
+	- Relevant papers: 
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have?
 	2.2 For some (or all) papers that we haven't covered already, add new data
