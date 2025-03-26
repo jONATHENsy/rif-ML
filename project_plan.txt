@@ -1,8 +1,8 @@
 Broad plan for project:
 
 1. Use ASReview to find papers reporting RIF resistance mutations
-	- Search term used: searching term:((rifampicin OR rifampin)  AND (mutation OR polymorphism OR variant) )
-	- Papers found:4,120
+	- Search term used: ((rifampicin OR rifampin) AND (resistance OR resistant) AND (mutation OR polymorphism OR variant))
+	- Papers found: ~3500
 	- Relevant papers: 
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have?
