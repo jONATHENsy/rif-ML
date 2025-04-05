@@ -1,11 +1,18 @@
-Broad plan for project:
+Fixed board plan for project:
 
 1. Use ASReview to find papers reporting RIF resistance mutations
 	- Search term used: ((rifampicin OR rifampin) AND (resistance OR resistant) AND (mutation OR polymorphism OR variant))
 	- Papers found: ~3500
-	- Relevant papers: 
+		~ fomatted papers found:3473（filtered by Wos-organising.Rmd
+	- Relevant papers: 242+[0,1144]
 2. Add data to our dataset of reported RIF resistance mutations
-	2.1 Assess overlap: which papers do we already have?
+	2.1 Assess overlap: which papers do we already have
+		2.11 Chose 109 labelled paper as training set ,apply both sentence-BERT & Finetuned Scibert to predict
+		2.12 compare both out， found results：✅ Total compared: 3366
+							✅ Same predictions: 2222
+								same relevant：244
+							❗ Different predictions: 1144
+		2.13 Mannually check 1144 different prediction on ASreview
 	2.2 For some (or all) papers that we haven't covered already, add new data
 3. Use unsupervised ML methods to identify clustering of mutations and species
 4. Use supervised ML methods to predict what mutations should be observed in a species
