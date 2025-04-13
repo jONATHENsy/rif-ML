@@ -2,17 +2,33 @@ Fixed board plan for project:
 
 1. Use ASReview to find papers reporting RIF resistance mutations
 	- Search term used: ((rifampicin OR rifampin) AND (resistance OR resistant) AND (mutation OR polymorphism OR variant))
-	- Papers found: ~3500
-		~ fomatted papers found:3473（filtered by Wos-organising.Rmd
-	- Relevant papers: 242+[0,1144]
+	
+	- Screening with ASReview:
+			First round manual screen: 109 papers（46 relevant）
+			
+			First comparison (SciBERT vs SentenceBERT,threshold as 0.52):
+			→ 1144 papers with differing labels
+			→ Manually screened additional 113 papers（46 relevant)
+			
+			Second comparison(SciBERT vs SentenceBERT,threshold as 0.52): another 113 differing predictions
+			→ Final manual screening on those 113(25 relevant）
+			
+			Total manually labelled relevant papers:
+			→ First 109 + 113 from first diff + 113 from second diff =335 total---> take as final train set
+	-Machine learning prediction to prioritize unlabeled papers
+				Fine-tuned SciBERT used to classify papers
+				Training data: All manually screened 335 papers
+				→ 5-fold stratified cross-validation
+				→ Find Best threshold (optimized): 0.174
+				→ F1-score: 0.56, Recall: 0.75
+				
+				Prediction on full dataset:
+				→ Applied model to remaining 3139 papers (excluding 335 labeled)
+				
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have
-		2.11 Chose 109 labelled paper as training set ,apply both sentence-BERT & Finetuned Scibert to predict
-		2.12 compare both out， found results：✅ Total compared: 3366
-							✅ Same predictions: 2222
-								same relevant：244
-							❗ Different predictions: 1144
-		2.13 Mannually check 1144 different prediction on ASreview
+	
+		
 	2.2 For some (or all) papers that we haven't covered already, add new data
 3. Use unsupervised ML methods to identify clustering of mutations and species
 4. Use supervised ML methods to predict what mutations should be observed in a species
