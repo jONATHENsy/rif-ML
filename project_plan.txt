@@ -17,13 +17,15 @@ Fixed board plan for project:
 			→ First 109 + 113 from first diff + 113 from second diff =335 total---> take as final train set
 	-Machine learning prediction to prioritize unlabeled papers
 				Fine-tuned SciBERT used to classify papers
-				Training data: All manually screened 335 papers
-				→ 5-fold stratified cross-validation
-				→ Find Best threshold (optimized): 0.174
-				→ F1-score: 0.56, Recall: 0.75
+				Training data: All manually screened 334 papers
+				Best_Threshold: 0.1420 ± 0.0546
+				Precision: 0.4059 ± 0.0655
+				Recall: 0.8283 ± 0.0702
+				F1: 0.5385 ± 0.0434
 				
 				Prediction on full dataset:
 				→ Applied model to remaining 3139 papers (excluding 335 labeled)
+					---142 relevant found
 				
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have
