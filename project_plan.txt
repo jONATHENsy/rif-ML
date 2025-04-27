@@ -29,8 +29,13 @@ Fixed board plan for project:
 				
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have
+			found same paper (via DOI)-37
+			different paper (via DOI)---170
+			No doi paper---11
 	
 		
 	2.2 For some (or all) papers that we haven't covered already, add new data
+		data from paper after 2015 is added in docs:Newrifmutdata/ latestnewdata.xsxl
+
 3. Use unsupervised ML methods to identify clustering of mutations and species
 4. Use supervised ML methods to predict what mutations should be observed in a species
