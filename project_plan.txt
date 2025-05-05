@@ -1,32 +1,41 @@
 Fixed board plan for project:
 
 1. Use ASReview to find papers reporting RIF resistance mutations
-	- Search term used: ((rifampicin OR rifampin) AND (resistance OR resistant) AND (mutation OR polymorphism OR variant))
-	
-	- Screening with ASReview:
-			First round manual screen: 109 papers（46 relevant）
-			
-			First comparison (SciBERT vs SentenceBERT,threshold as 0.52):
-			→ 1144 papers with differing labels
-			→ Manually screened additional 113 papers（46 relevant)
-			
-			Second comparison(SciBERT vs SentenceBERT,threshold as 0.52): another 113 differing predictions
-			→ Final manual screening on those 113(25 relevant）
-			
-			Total manually labelled relevant papers:
-			→ First 109 + 113 from first diff + 113 from second diff =335 total---> take as final train set
-	-Machine learning prediction to prioritize unlabeled papers
-				Fine-tuned SciBERT used to classify papers
-				Training data: All manually screened 334 papers
-				Best_Threshold: 0.1420 ± 0.0546
-				Precision: 0.4059 ± 0.0655
-				Recall: 0.8283 ± 0.0702
-				F1: 0.5385 ± 0.0434
-				
-				Prediction on full dataset:
-				→ Applied model to remaining 3139 papers (excluding 335 labeled)
-					---142 relevant found
-				
+	- Search term used: ((rifampicin OR rifampin) AND (resistance OR resistant) AND (mutation OR polymorphism OR variant)).
+
+		Initial manual screening with ASReview:
+		Using active learning, the top-ranked 109 papers were manually screened, identifying 46 relevant ones.
+		These labeled papers served as the initial training set for downstream machine learning.
+		
+		Model disagreement analysis (Round 1):
+		Two language models were fine-tuned and applied:
+		
+		Sentence-BERT (all-MiniLM-L6-v2)
+		
+		SciBERT (allenai/scibert_scivocab_uncased)
+		The models were used to predict labels on the remaining dataset. Among them, 1144 papers had disagreeing predictions (i.e., classified differently 		by the two models at threshold = 0.52).
+		From these, 113 papers were manually annotated → 46 relevant.
+		
+		Model disagreement analysis (Round 2):
+		A second set of 113 new disagreeing documents was selected and manually labeled → 25 relevant.
+		
+		Final labeled dataset:
+		The three rounds of manual labeling resulted in 335 labeled papers, including both relevant and irrelevant examples.
+		These were merged to form the final training set for model refinement.
+		
+		Model fine-tuning and cross-validation:
+		The refined SciBERT model was trained on the full labeled dataset (334 usable records), and its performance was evaluated using Stratified 5-fold 		Cross-Validation, with the following averaged metrics:
+		
+		Best Threshold: 0.1420 ± 0.0546
+		
+		Precision: 0.4059 ± 0.0655
+		
+		Recall: 0.8283 ± 0.0702
+		
+		F1-score: 0.5385 ± 0.0434
+		
+		Final prediction on unlabeled data:
+		The fine-tuned SciBERT model was then applied to the remaining 3139 previously unlabeled papers, identifying 142 predicted relevant entries for 		downstream analysis and data extraction.
 2. Add data to our dataset of reported RIF resistance mutations
 	2.1 Assess overlap: which papers do we already have
 			found same paper (via DOI)-37
@@ -38,4 +47,19 @@ Fixed board plan for project:
 		data from paper after 2015 is added in docs:Newrifmutdata/ latestnewdata.xsxl
 
 3. Use unsupervised ML methods to identify clustering of mutations and species
+	Planned methods:
+
+		PCA for dimensionality reduction
+		UMAP for nonlinear structure embedding
+		HDBSCAN for identifying biologically meaningful mutation clusters
+	Goals:
+		Identify mutation patterns by species
+		Explore cross-species “common resistance mutations”
 4. Use supervised ML methods to predict what mutations should be observed in a species
+	Planned classifiers: Logistic regression, Random Forest, Neural Networks
+	Target:
+		Predict novel rifampicin resistance mutations
+		Flag mutations likely to be false negatives in current catalogs
+		Generalize predictions to poorly studied species (e.g., M. abscessus, M. fortuitum)
+
+				
