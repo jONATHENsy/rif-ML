@@ -7,4 +7,5 @@ Unsupervised analysis of **rifampicin-resistance rpoB mutations**
 ├─ scripts/
 │ ├─ generatemutations.R
 │ └─ unsupervisedML.R # main analysis pipeline
-└─ README.md
+└─── main.R
+│----─ README.md
