@@ -10,3 +10,22 @@ Meeting:
 
 To Dos:
 - Make progress with ASReview
+
+
+Week 09/06/2025
+--------------
+
+Meeting:
+- looked at clustering figure (needs to be improved)
+- looked at data: data for Salmonella all compensatory mutations that needed to be deleted
+- talked about file structure for project: keep everything in one R project
+
+To Dos:
+- clean project structure, with single master R script that calls all other scripts
+- make sure data is clean: all reference sequences present, mutations are all real mutations from mutant screens
+- produce figures summarising the data (upset plot)
+- clustering figures: try different methods (metrics, clustering algorithms)
+
+Record keeping:
+- 10/6/2025: did this or that
+
