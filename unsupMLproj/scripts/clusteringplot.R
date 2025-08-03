@@ -23,7 +23,7 @@ suppressPackageStartupMessages({
 ## 2. Locate input objects / files
 ## -----------------------------------------------------------
 if (!exists("base_dir"))
-  base_dir <- "D:/2025s1/BIOX7011/rif-ML/unsupMLproj"
+  base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
 
 mut_file <- file.path(base_dir, "output", "labmuts.csv")
 label_file <- file.path(base_dir, "output", "cluster_labels_all_methods.csv")

@@ -12,7 +12,7 @@ if (!exists("X_dense"))
   stop("X_dense not found – run clusteringplot.R (or main.R) first")
 
 if (!exists("base_dir")) {
-  base_dir <- "D:/2025s1/BIOX7011/rif-ML/unsupMLproj"
+  base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
 }
 
 # -------------------------------------------------------------
