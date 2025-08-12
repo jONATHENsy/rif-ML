@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 
 # 设置基本路径
 if (!exists("base_dir"))
-  base_dir <- "D:/2025s1/BIOX7011/rif-ML/unsupMLproj"
+  base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
 
 labmuts_path <- file.path(base_dir, "output", "labmuts.csv")
 labmuts <- read_csv(labmuts_path, show_col_types = FALSE)
@@ -31,8 +31,8 @@ confounder_df <- labmuts %>%
   arrange(desc(study_score))
 
 # 修改筛选标准（放宽要求）
-q_low <- quantile(confounder_df$study_score, 0.20, na.rm = TRUE)
-q_high <- quantile(confounder_df$study_score, 0.80, na.rm = TRUE)
+q_low <- quantile(confounder_df$study_score, 0.7, na.rm = TRUE)
+q_high <- quantile(confounder_df$study_score, 1, na.rm = TRUE)
 
 core_species <- confounder_df %>%
   filter(num_mutations >= 3, num_studies >= 1, study_score >= q_low, study_score <= q_high) %>%
@@ -68,6 +68,8 @@ X <- Matrix::sparseMatrix(
 X_dense_filtered <- as.matrix(X)
 X_dense_filtered[X_dense_filtered > 0] <- 1
 
-saveRDS(X_dense_filtered, file = file.path(base_dir, "output", "X_dense_filtered.RDS"))
+saveRDS(X_dense_filtered, file = file.path(base_dir, "output", "X_dense_high.RDS"))
 message("✓ filter_species.R completed. Core species count:", nrow(X_dense_filtered))
+unit_tbl_filtered <- unit_tbl %>% filter(Species %in% core_species)
+message("📈 对应突变数：", unit_tbl_filtered %>% distinct(Orthologous_AA) %>% nrow())
 

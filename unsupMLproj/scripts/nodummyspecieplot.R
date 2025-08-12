@@ -16,21 +16,26 @@ suppressPackageStartupMessages({
 
 # 设置路径
 base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
-fig_dir <- file.path(base_dir, "figures", "filtered_high")  # 可根据需要更改为 filtered_full
+fig_dir <- file.path(base_dir, "figures", "filtered_nodummy")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
 # 数据路径
-mat_path <- file.path(base_dir, "output", "X_dense_high.RDS")
+mat_path <- file.path(base_dir, "output", "X_dense_midhigh.RDS")
 label_file <- file.path(base_dir, "output", "cluster_labels_filtered.csv")
+
+# 👇 读取并过滤物种
+remove_species <- c("Vibrio parahaemolyticus", "Vibrio vulnificus", "Streptomyces lividans")
 
 X_dense <- readRDS(mat_path)
 mode(X_dense) <- "numeric"
 X_dense[is.na(X_dense)] <- 0
+X_dense <- X_dense[!(rownames(X_dense) %in% remove_species), , drop = FALSE]
 
 cluster_labels <- read_csv(label_file, show_col_types = FALSE) %>%
-  mutate(Unit = as.character(Unit))
+  mutate(Unit = as.character(Unit)) %>%
+  filter(!(Unit %in% remove_species))
 
-# 执行 UMAP（保持原设定）
+# 执行 UMAP
 set.seed(123)
 umap_res <- umap(
   X_dense,
@@ -44,7 +49,7 @@ umap_df_base <- as_tibble(umap_res, .name_repair = "unique") %>%
   setNames(c("UMAP1", "UMAP2")) %>%
   mutate(Species = rownames(X_dense))
 
-# 👇 替换为 Manhattan 距离下评分较高的三个方法
+# 使用 Manhattan 距离下评分最高的三种方法
 top_methods <- c("MANHATTAN_HDBSCAN", "MANHATTAN_GMM", "MANHATTAN_KMEANS")
 
 for (method in top_methods) {
@@ -62,76 +67,35 @@ for (method in top_methods) {
   ggsave(file.path(fig_dir, paste0("umap_", method, ".png")),
          p, width = 6, height = 5, dpi = 300)
   
-  # ---- Heatmap：全部突变（改良版）----
+  # Heatmap：全部突变
   sub_mat <- X_dense[umap_df$Species, , drop = FALSE]
   
   cluster_ids <- sort(unique(umap_df$Cluster))
-  palette_colors <- RColorBrewer::brewer.pal(max(3, length(cluster_ids)), "Set1")
-  cluster_cols <- stats::setNames(palette_colors[seq_along(cluster_ids)], cluster_ids)
+  palette_colors <- brewer.pal(max(3, length(cluster_ids)), "Set1")
+  cluster_cols <- setNames(palette_colors[seq_along(cluster_ids)], cluster_ids)
   
-  row_anno <- ComplexHeatmap::rowAnnotation(
+  row_anno <- rowAnnotation(
     Cluster = umap_df$Cluster,
     col = list(Cluster = cluster_cols),
     show_annotation_name = FALSE
   )
   
-  # 1) 根据列数(突变数)动态设置画布宽度（每列 12–16 px）
-  n_mut <- ncol(sub_mat)
-  png_w <- max(2400, min(9000, n_mut * 14))   # 2.4K–9K 像素之间
-  png_h <- 2400                               # 提高高度以容纳行名
-  dpi   <- 300                                # 提高分辨率
-  
-  # 2) 为行名预留最大宽度（根据文字实际宽度）
-  max_rowlab <- ComplexHeatmap::max_text_width(
-    rownames(sub_mat),
-    gp = grid::gpar(fontsize = 10)            # 行名字体大小
-  )
-  
-  # 3) 构建热图对象
-  ht <- ComplexHeatmap::Heatmap(
+  ht <- Heatmap(
     sub_mat,
     name = "Mut",
     col = c("0" = "white", "1" = "steelblue"),
     cluster_rows = FALSE,
     cluster_columns = TRUE,
-    row_split = umap_df$Cluster,
-    left_annotation = row_anno,
-    
-    # ——让标签看得清楚——
     show_row_names = TRUE,
-    row_names_side = "left",
-    row_names_gp = grid::gpar(fontsize = 10),
-    row_names_max_width = max_rowlab,         # 关键：不截断行名
-    
-    show_column_names = TRUE,
-    column_names_rot = 90,                    # 竖着放列名
-    column_names_gp  = grid::gpar(fontsize = 6),  # 列名更小
-    column_names_centered = TRUE,
-    column_names_max_height = grid::unit(12, "cm"),
-    
-    # 画布中的热图尺寸（相对），不用太执着具体 cm 值
-    width  = grid::unit(1, "npc"),
-    height = grid::unit(1, "npc"),
-    
-    # 大矩阵时用 raster 加速/减轻锯齿
-    use_raster = TRUE,
-    raster_device = "png"
+    left_annotation = row_anno,
+    row_split = umap_df$Cluster,
+    width = unit(33, "cm"),
+    height = unit(12, "cm")
   )
   
-  # 4) 计算左侧 padding（行名需要的空间 + 额外 6 mm）
-  left_pad_mm <- grid::convertWidth(max_rowlab, "mm", valueOnly = TRUE) + 6
-  
-  png(file.path(fig_dir, paste0("heatmap_", method, "_allmut.png")),
-      width = png_w, height = png_h, res = dpi, type = "cairo-png")
-  
-  ComplexHeatmap::draw(
-    ht,
-    heatmap_legend_side = "right",
-    annotation_legend_side = "right",
-    padding = grid::unit(c(5, 5, 5, left_pad_mm), "mm")  # top, right, bottom, left
-  )
+  png(file.path(fig_dir, paste0("heatmap_", method, "_allmut.png")), width = 1600, height = 1400, res = 120)
+  draw(ht)
   dev.off()
-  
 }
 
 # Upset Plot 1：物种集合交集
@@ -160,4 +124,3 @@ upset(inverted_df[, -ncol(inverted_df)], nsets = 10, nintersects = 30,
 dev.off()
 
 message("✅ Done plotting with top Manhattan clustering methods.")
-

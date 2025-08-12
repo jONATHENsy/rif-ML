@@ -3,6 +3,7 @@
 # -------------------------------------------------------------
 # 同时对原始 X_dense、残差 X_resid、筛选子集 X_dense_filtered 做聚类分析
 # 输出 cluster label + silhouette score 表格，用于性能比较
+# 动态调整 n_neighbors 以适配小样本数据（如 core species）
 # =============================================================
 
 message("\n>>> compareclustering_plus_all.R started")
@@ -17,7 +18,7 @@ suppressPackageStartupMessages({
 })
 
 if (!exists("base_dir"))
-  base_dir <- "D:/2025s1/BIOX7011/rif-ML/unsupMLproj"
+  base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
 
 out_dir <- file.path(base_dir, "output")
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
@@ -29,12 +30,14 @@ run_pipeline <- function(mat, metric = "euclidean",
                          cluster_method = "hdbscan",
                          minPts = 5, seed = 123) {
   set.seed(seed)
+  n_neighbors <- min(15, max(2, nrow(mat) - 1))  # 动态调整
+  
   if (metric == "jaccard") {
     dmat <- proxy::dist(mat, method = "Jaccard")
     um <- uwot::umap(as.matrix(dmat), input = "dist", metric = "precomputed",
-                     n_neighbors = 15, min_dist = 0.3, verbose = FALSE)
+                     n_neighbors = n_neighbors, min_dist = 0.3, verbose = FALSE)
   } else {
-    um <- uwot::umap(mat, metric = metric, n_neighbors = 15,
+    um <- uwot::umap(mat, metric = metric, n_neighbors = n_neighbors,
                      min_dist = 0.3, verbose = FALSE)
   }
   clust <- switch(cluster_method,
@@ -66,6 +69,12 @@ variant_list <- list(
 for (variant in names(variant_list)) {
   cat("\n>>> Running clustering on:", variant, "\n")
   mat <- variant_list[[variant]]
+  
+  if (nrow(mat) < 4) {
+    warning(paste("Skipped", variant, "because it has < 4 rows (too small for clustering)"))
+    next
+  }
+  
   results <- pmap(schemes, ~run_pipeline(mat, metric = ..1, cluster_method = ..2))
   unit_names <- rownames(mat)
   
@@ -91,7 +100,6 @@ for (variant in names(variant_list)) {
     Source = variant
   )
   
-  # 保存
   write_csv(cluster_tbl, file.path(out_dir, paste0("cluster_labels_", variant, ".csv")))
   write_csv(sil_df,      file.path(out_dir, paste0("silhouette_scores_", variant, ".csv")))
 }

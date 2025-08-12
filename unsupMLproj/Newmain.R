@@ -5,7 +5,7 @@
 ## --------------------------------------------------------------
 ## 0. Base directory (edit if you move the project)
 ## --------------------------------------------------------------
-base_dir <- "D:/2025s1/BIOX7011/rif-ML/unsupMLproj"
+base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
 
 dir.create(file.path(base_dir, "data"),   FALSE, TRUE)
 dir.create(file.path(base_dir, "output"), FALSE, TRUE)
