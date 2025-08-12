@@ -29,3 +29,15 @@ To Dos:
 Record keeping:
 - 10/6/2025: did this or that
 
+week 12/08/2025
+
+Meeting:
+- looked high freq species/mid-high species' heatmaps and umaps
+- talk about how to solve left margin problem
+-Professor explain and discuss the aquirum vs ocean proble for "unknown" labels and "0"
+ To Dos:
+- fixing left margin on heatmaps plot, 
+-finding the cut point to leave less studied muatation on the plot,
+- read and understand professor's GPT discussion about supervised problems
+
+
