@@ -27,26 +27,55 @@ suppressPackageStartupMessages({
 
 # ---------------- 参数区（可改） ----------------
 # 仅从这个 metric 里挑前K名；设为 NULL 则在所有 metric 中挑
-restrict_metric <- "manhattan"   # 常用："manhattan" / NULL
+restrict_metric <- NULL   # 常用："manhattan" / NULL
 top_k          <- 3              # 选前K个方案
 min_cluster_pts <- 5             # HDBSCAN/DBSCAN 的 minPts
 dbscan_eps      <- 1.2           # DBSCAN 的 eps
 set.seed(123)
 
 # 额外向右平移（mm），避免左侧行名被遮挡
-shift_right_mm <- -48   # 24~40 之间调；不改其它配置
+shift_right_mm <- 28  # 24~40 之间调；不改其它配置
 
 # ---------------- 路径 ----------------
 base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
-fig_dir  <- file.path(base_dir, "figures", "filtered_mhtest05")
+fig_dir  <- file.path(base_dir, "figures", "filtered_htest02")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---------------- 数据 ----------------
-mat_path   <- file.path(base_dir, "output", "X_dense_midhigh.RDS")
+mat_path   <- file.path(base_dir, "output", "X_dense_high.RDS")
+# 可选：如果有外部聚类标签文件，这里给出路径；没有也没关系
+label_file <- file.path(base_dir, "output", "cluster_labels_filtered.csv")
+
+# 👇 读取并过滤物种
+remove_species <- c(
+  "Vibrio parahaemolyticus",
+  "Vibrio vulnificus",
+  "Streptomyces lividans"
+)
+
 X_dense <- readRDS(mat_path)
 mode(X_dense) <- "numeric"
 X_dense[is.na(X_dense)] <- 0
+
+# 过滤前记录哪些物种会被移除（仅用于日志，可删）
+to_remove_now <- intersect(remove_species, rownames(X_dense))
+
+# 过滤矩阵行
+X_dense <- X_dense[!(rownames(X_dense) %in% remove_species), , drop = FALSE]
+
+# 过滤后更新物种名（供后续使用）
 unit_names <- rownames(X_dense)
+
+# 若存在外部聚类标签文件，则同步过滤（可选）
+if (file.exists(label_file)) {
+  cluster_labels <- readr::read_csv(label_file, show_col_types = FALSE) %>%
+    dplyr::mutate(Unit = as.character(Unit)) %>%
+    dplyr::filter(!(Unit %in% remove_species))
+}
+
+if (length(to_remove_now) > 0) {
+  message("Filtered species: ", paste(to_remove_now, collapse = ", "))
+}
 
 # =============================================================
 # 一、compareclustering（内联版）
