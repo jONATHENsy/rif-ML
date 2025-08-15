@@ -1,5 +1,5 @@
 # =============================================================
-# clusteringplot_filtered_full.R – 自动选最优聚类并作图（全突变）
+# compareandplot.R – 自动选最优聚类并作图（全突变）
 # - 先在当前 X_dense 上对多种 metric×算法 做聚类 → 计算平均轮廓系数
 # - 选出 top_methods（默认限制为 metric="manhattan"，更贴合你之前习惯）
 # - 用各自的 UMAP 与聚类标签画 UMAP & Heatmap
@@ -38,7 +38,7 @@ shift_right_mm <- 28  # 24~40 之间调；不改其它配置
 
 # ---------------- 路径 ----------------
 base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
-fig_dir  <- file.path(base_dir, "figures", "filtered_htest02")
+fig_dir  <- file.path(base_dir, "figures", "filtered_h01")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---------------- 数据 ----------------
@@ -252,7 +252,7 @@ for (method in top_methods) {
   # --- PNG ---
   png(file.path(fig_dir, paste0("heatmap_", method, "_allmut.png")),
       width = png_w, height = png_h, res = dpi, type = "cairo-png")
-  ComplexHeatmap::draw(
+  ht_drawn <- ComplexHeatmap::draw(
     ht,
     heatmap_legend_side = "right",
     annotation_legend_side = "right",
@@ -277,6 +277,98 @@ for (method in top_methods) {
   )
   dev.off()
   message("PDF saved: ", out_pdf)
+  # ---------- Top-30-only clear heatmap ----------
+  # 1) 先按完整热图的列顺序对 top30 进行排序（若不可用则退回原顺序）
+  ord_try <- try(ComplexHeatmap::column_order(ht_drawn), silent = TRUE)
+  if (!inherits(ord_try, "try-error")) {
+    ord_vec <- if (is.list(ord_try)) ord_try[[1]] else ord_try
+    full_names <- colnames(sub_mat)
+    ordered_names <- full_names[ord_vec]
+    keep_cols <- ordered_names[ordered_names %in% top30]
+  } else {
+    keep_cols <- colnames(sub_mat)[colnames(sub_mat) %in% top30]
+  }
+  
+  if (length(keep_cols) == 0) {
+    message("No overlap between matrix columns and top30 for ", method, "; skip top30 plot.")
+  } else {
+    sub_mat_top <- sub_mat[, keep_cols, drop = FALSE]
+    
+    # 注释与配色沿用完整图；列顺序固定（不再二次聚类）
+    rowlab_w_t <- ComplexHeatmap::max_text_width(rownames(sub_mat_top), gp = gpar(fontsize = 10))
+    collab_h_t <- ComplexHeatmap::max_text_width(colnames(sub_mat_top),  gp = gpar(fontsize = 6))
+    row_names_max_t <- rowlab_w_t + unit(12, "mm")
+    
+    ht_top <- ComplexHeatmap::Heatmap(
+      sub_mat_top,
+      name = "Mut",
+      col = c("0" = "white", "1" = "steelblue"),
+      cluster_rows = FALSE,
+      cluster_columns = FALSE,      # 固定为上面 keep_cols 的顺序
+      row_split = umap_df$Cluster,
+   
+      
+     
+      show_row_names = TRUE,
+      row_names_side = "left",
+      row_names_gp   = gpar(fontsize = 9),
+      row_names_max_width = row_names_max_t,
+      
+      show_column_names = TRUE,
+      column_names_rot  = 90,
+      column_names_gp   = gpar(fontsize = 7),
+      column_names_centered = TRUE,
+      column_names_max_height = collab_h_t + unit(2, "mm"),
+      
+      right_annotation = row_anno,
+      width  = unit(1, "npc"),
+      height = unit(1, "npc"),
+      use_raster = TRUE,
+      raster_device = "png"
+    )
+    
+    left_pad_mm_t   <- max(convertWidth(row_names_max_t, "mm", valueOnly = TRUE) + 10, 32)
+    bottom_pad_mm_t <- convertWidth(collab_h_t, "mm", valueOnly = TRUE) + 8
+    
+    # 尺寸：高沿用完整图，宽按列数自适应
+    n_top <- ncol(sub_mat_top); dpi <- 300
+    
+    px_per_col <- 40  # 列宽：建议 36–48，原来是 18
+    px_per_row <- 28  # 行高：建议 24–32，原来继承了 50
+    
+    png_w_t <- max(1600, n_top * px_per_col)
+    png_h_t <- max(1200, n_sp  * px_per_row)
+    
+    
+    
+    # PNG
+    png(file.path(fig_dir, sprintf("heatmap_%s_top30.png", method)),
+        width = png_w_t, height = png_h_t, res = dpi, type = "cairo-png")
+    ComplexHeatmap::draw(
+      ht_top,
+      heatmap_legend_side = "right",
+      annotation_legend_side = "right",
+      padding = unit(c(6, 6, bottom_pad_mm_t, left_pad_mm_t + shift_right_mm), "mm")
+    )
+    dev.off()
+    
+    # PDF
+    pdf(file.path(fig_dir, sprintf("heatmap_%s_top30.pdf", method)),
+        width = max(8,  n_top * (px_per_col/90)),  # 40px/列 ≈ 0.44英寸/列 可按需微调
+        height = max(6, n_sp  * (px_per_row/90)))  # 28px/行 ≈ 0.31英寸/行
+    
+    ComplexHeatmap::draw(
+      ht_top,
+      heatmap_legend_side = "right",
+      annotation_legend_side = "right",
+      padding = unit(c(6, 6, bottom_pad_mm_t, left_pad_mm_t + shift_right_mm), "mm")
+    )
+    dev.off()
+    
+    message("Top-30 clear heatmap saved for ", method, " (", n_top, " columns).")
+  }
+  # ---------- end of Top-30-only clear heatmap ----------
+  
 }
 
 # =============================================================
