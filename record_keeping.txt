@@ -29,8 +29,29 @@ To Dos:
 Record keeping:
 - 10/6/2025: did this or that
 
-week 12/08/2025
 
+week 14/07/2025
+Meeting：
+-  talk about using confounder bias/ other methods to distinguish well studied species and others,
+- discuss about basic heatmap and umap results ,find some doubtful species(could have a seq shift problem)
+TO Dos：
+- Searching methods to solve confounder bias problem
+- Re-check google rif mutation docs' data for those doubtful species
+
+
+week 05/08/2025
+Meeting：
+ - Discussed the issue of overcrowding of mutation names on the horizontal axis of the plot.
+- Also discussed whether to modify or remove species with suspected incorrectly constructed mutation sites, such as Vibrio parahaemolyticus.
+-Both professors suggested using self-made dummy data to test the feasibility of the clustering method.
+week 12/08/2025
+TO Dos：
+- create dummydata sets for testing
+-fix X-axis's scale problem and made plot available for zoomed out/in
+-combine finding best clustering method and plot heatmap/umap together
+- removed some doubtful species
+
+week 05/08/2025
 Meeting:
 - looked high freq species/mid-high species' heatmaps and umaps
 - talk about how to solve left margin problem
