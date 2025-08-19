@@ -51,7 +51,7 @@ TO Dos：
 -combine finding best clustering method and plot heatmap/umap together
 - removed some doubtful species
 
-week 05/08/2025
+week 12/08/2025
 Meeting:
 - looked high freq species/mid-high species' heatmaps and umaps
 - talk about how to solve left margin problem
@@ -60,5 +60,15 @@ Meeting:
 - fixing left margin on heatmaps plot, 
 -finding the cut point to leave less studied muatation on the plot,
 - read and understand professor's GPT discussion about supervised problems
+
+Week 19/08/2025
+Meeting:
+- talk about repo structure improvement, especially the not proper with project plan's 4 step
+- explain PU learning method used to treat unlabelled data and display some results
+- discuss about "no trustful absence" problem , thats no proper test dataset available
+TO Dos:
+- fix structure problem in repo,try to display as 4 clear part
+- read and learn more about PU-learning+ RF/Logical regression
+- fix previous plot margin problem
 
 
