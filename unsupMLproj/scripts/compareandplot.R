@@ -38,7 +38,7 @@ shift_right_mm <- 28  # 24~40 之间调；不改其它配置
 
 # ---------------- 路径 ----------------
 base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
-fig_dir  <- file.path(base_dir, "figures", "filtered_h01")
+fig_dir  <- file.path(base_dir, "figures", "filtered_h02")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---------------- 数据 ----------------
@@ -207,17 +207,22 @@ for (method in top_methods) {
     Cluster = umap_df$Cluster,
     col = list(Cluster = cluster_cols),
     show_annotation_name = FALSE,
-    width = unit(3, "mm")
+    width = unit(4, "mm")    # 小幅加粗注释带
   )
   
   n_mut <- ncol(sub_mat)
   n_sp  <- nrow(sub_mat)
-  png_w <- max(3200, n_mut * 18)
-  png_h <- max(2400, n_sp * 50)
+  
+  # ====== 画布尺寸（更宽）======
+  col_px_full <- 32  # 👈 全量热图：每列像素（原来是 18，太瘦）
+  row_px_full <- 26  # 行高像素（原来 50 很高）
+  png_w <- max(3600, n_mut * col_px_full)
+  png_h <- max(1600, n_sp  * row_px_full)
   dpi   <- 300
+  # ============================
   
   rowlab_w <- ComplexHeatmap::max_text_width(rownames(sub_mat), gp = gpar(fontsize = 10))
-  collab_h <- ComplexHeatmap::max_text_width(colnames(sub_mat), gp = gpar(fontsize = 6))
+  collab_h <- ComplexHeatmap::max_text_width(colnames(sub_mat), gp = gpar(fontsize = 8))
   row_names_max <- rowlab_w + unit(12, "mm")
   
   ht <- ComplexHeatmap::Heatmap(
@@ -225,20 +230,17 @@ for (method in top_methods) {
     name = "Mut",
     col = c("0" = "white", "1" = "steelblue"),
     cluster_rows = FALSE,
-    cluster_columns = TRUE,
-    row_split = umap_df$Cluster,
-    
+    cluster_columns = TRUE,        # 保持列聚类（得到列树）
+    row_split = umap_df$Cluster,   # 行分面（用聚类标签）
     show_row_names = TRUE,
     row_names_side = "left",
     row_names_gp = gpar(fontsize = 10),
     row_names_max_width = row_names_max,
-    
     show_column_names = TRUE,
     column_names_rot  = 90,
-    column_names_gp   = gpar(fontsize = 6),
+    column_names_gp   = gpar(fontsize = 8),
     column_names_centered = TRUE,
     column_names_max_height = collab_h + unit(2, "mm"),
-    
     right_annotation = row_anno,
     width  = unit(1, "npc"),
     height = unit(1, "npc"),
@@ -246,10 +248,10 @@ for (method in top_methods) {
     raster_device = "png"
   )
   
-  left_pad_mm   <- max(convertWidth(row_names_max, "mm", valueOnly = TRUE) + 10, 32)
-  bottom_pad_mm <- convertWidth(collab_h, "mm", valueOnly = TRUE) + 8
+  left_pad_mm   <- max(convertWidth(row_names_max, "mm", valueOnly = TRUE) + 10, 34)
+  bottom_pad_mm <- convertWidth(collab_h, "mm", valueOnly = TRUE) + 10
   
-  # --- PNG ---
+  # --- PNG（全量，更宽）---
   png(file.path(fig_dir, paste0("heatmap_", method, "_allmut.png")),
       width = png_w, height = png_h, res = dpi, type = "cairo-png")
   ht_drawn <- ComplexHeatmap::draw(
@@ -260,9 +262,10 @@ for (method in top_methods) {
   )
   dev.off()
   
-  # --- PDF（矢量） ---
-  pdf_w_in <- max(8, n_mut * 0.18)
-  pdf_h_in <- max(8, n_sp  * 0.45)
+  # --- PDF（矢量）---
+  # 按列/行像素估算英寸：1 英寸≈90px 的经验换算
+  pdf_w_in <- max(8,  n_mut * (col_px_full/90))
+  pdf_h_in <- max(6,  n_sp  * (row_px_full/90))
   out_pdf <- file.path(fig_dir, sprintf("heatmap_%s_allmut.pdf", method))
   if (file.exists(out_pdf)) {
     out_pdf <- file.path(fig_dir, sprintf("heatmap_%s_allmut_%s.pdf",
@@ -277,16 +280,15 @@ for (method in top_methods) {
   )
   dev.off()
   message("PDF saved: ", out_pdf)
-  # ---------- Top-30-only clear heatmap ----------
-  # 1) 先按完整热图的列顺序对 top30 进行排序（若不可用则退回原顺序）
+  
+  # ---------- Top-30-only clear heatmap (fixed width & padding) ----------
   ord_try <- try(ComplexHeatmap::column_order(ht_drawn), silent = TRUE)
   if (!inherits(ord_try, "try-error")) {
     ord_vec <- if (is.list(ord_try)) ord_try[[1]] else ord_try
-    full_names <- colnames(sub_mat)
-    ordered_names <- full_names[ord_vec]
+    ordered_names <- colnames(sub_mat)[ord_vec]
     keep_cols <- ordered_names[ordered_names %in% top30]
   } else {
-    keep_cols <- colnames(sub_mat)[colnames(sub_mat) %in% top30]
+    keep_cols <- intersect(colnames(sub_mat), top30)
   }
   
   if (length(keep_cols) == 0) {
@@ -294,80 +296,93 @@ for (method in top_methods) {
   } else {
     sub_mat_top <- sub_mat[, keep_cols, drop = FALSE]
     
-    # 注释与配色沿用完整图；列顺序固定（不再二次聚类）
-    rowlab_w_t <- ComplexHeatmap::max_text_width(rownames(sub_mat_top), gp = gpar(fontsize = 10))
-    collab_h_t <- ComplexHeatmap::max_text_width(colnames(sub_mat_top),  gp = gpar(fontsize = 6))
-    row_names_max_t <- rowlab_w_t + unit(12, "mm")
+    # —— 关键：用“像素”控制列宽/行高，并把左/右留白精确转为像素 —— #
+    n_top <- ncol(sub_mat_top)
+    n_sp  <- nrow(sub_mat_top)
+    dpi   <- 300
+    
+    col_px <- 70     # 每一列的目标像素宽度（更宽更清爽；可调 60–90）
+    row_px <- 26     # 每一行的目标像素高度（可调 22–30）
+    
+    left_pad_mm  <- 6    # top30 不再额外右移，避免重复留白
+    right_pad_mm <- 45   # 为右侧图例和注释条留足空间（很重要）
+    top_pad_mm   <- 6
+    
+    # 把 mm 换算为像素
+    mm2px <- function(mm, dpi) mm / 25.4 * dpi
+    left_pad_px   <- mm2px(left_pad_mm,  dpi)
+    right_pad_px  <- mm2px(right_pad_mm, dpi)
+    top_pad_px    <- mm2px(top_pad_mm,   dpi)
+    
+    # 画布宽高（像素）：= 左留白 + 列宽*n_top + 右留白
+    png_w_t <- ceiling(left_pad_px + n_top * col_px + right_pad_px)
+    # 高度：给行名 + 热图 + (旋转列名占的“高度”)
+    # 列名高度由 ComplexHeatmap 处理，这里主要保证行方向有足够空间
+    png_h_t <- max(1200, ceiling(n_sp * row_px + top_pad_px + 80))
+    
+    # 文本样式与最大宽/高（不过度放大）
+    rowlab_w_t <- ComplexHeatmap::max_text_width(rownames(sub_mat_top),
+                                                 gp = gpar(fontsize = 10))
+    collab_h_t <- unit(12, "mm")  # 给列名留 12mm 高度（旋转 90°）
     
     ht_top <- ComplexHeatmap::Heatmap(
       sub_mat_top,
       name = "Mut",
       col = c("0" = "white", "1" = "steelblue"),
       cluster_rows = FALSE,
-      cluster_columns = FALSE,      # 固定为上面 keep_cols 的顺序
+      cluster_columns = FALSE,      # 固定使用完整图里的列顺序
       row_split = umap_df$Cluster,
-   
       
-     
       show_row_names = TRUE,
       row_names_side = "left",
-      row_names_gp   = gpar(fontsize = 9),
-      row_names_max_width = row_names_max_t,
+      row_names_gp   = gpar(fontsize = 10),
+      row_names_max_width = rowlab_w_t,
       
       show_column_names = TRUE,
       column_names_rot  = 90,
-      column_names_gp   = gpar(fontsize = 7),
+      column_names_gp   = gpar(fontsize = 9),
       column_names_centered = TRUE,
-      column_names_max_height = collab_h_t + unit(2, "mm"),
+      column_names_max_height = collab_h_t,
       
-      right_annotation = row_anno,
+      right_annotation = row_anno,   # 复用完整图的行注释
       width  = unit(1, "npc"),
       height = unit(1, "npc"),
       use_raster = TRUE,
       raster_device = "png"
     )
     
-    left_pad_mm_t   <- max(convertWidth(row_names_max_t, "mm", valueOnly = TRUE) + 10, 32)
-    bottom_pad_mm_t <- convertWidth(collab_h_t, "mm", valueOnly = TRUE) + 8
-    
-    # 尺寸：高沿用完整图，宽按列数自适应
-    n_top <- ncol(sub_mat_top); dpi <- 300
-    
-    px_per_col <- 40  # 列宽：建议 36–48，原来是 18
-    px_per_row <- 28  # 行高：建议 24–32，原来继承了 50
-    
-    png_w_t <- max(1600, n_top * px_per_col)
-    png_h_t <- max(1200, n_sp  * px_per_row)
-    
-    
-    
-    # PNG
+    # —— 真正绘图：右侧给足 padding，避免图例挤到热图上 —— #
     png(file.path(fig_dir, sprintf("heatmap_%s_top30.png", method)),
         width = png_w_t, height = png_h_t, res = dpi, type = "cairo-png")
     ComplexHeatmap::draw(
       ht_top,
       heatmap_legend_side = "right",
       annotation_legend_side = "right",
-      padding = unit(c(6, 6, bottom_pad_mm_t, left_pad_mm_t + shift_right_mm), "mm")
+      # padding 顺序：top, right, bottom, left
+      padding = unit(c(top_pad_mm, right_pad_mm, 8, left_pad_mm), "mm"),
+      merge_legend = TRUE
     )
     dev.off()
     
-    # PDF
+    # 同步生成 PDF（宽高与 PNG 对齐换算）
     pdf(file.path(fig_dir, sprintf("heatmap_%s_top30.pdf", method)),
-        width = max(8,  n_top * (px_per_col/90)),  # 40px/列 ≈ 0.44英寸/列 可按需微调
-        height = max(6, n_sp  * (px_per_row/90)))  # 28px/行 ≈ 0.31英寸/行
-    
+        width  = png_w_t / dpi,
+        height = png_h_t / dpi)
     ComplexHeatmap::draw(
       ht_top,
       heatmap_legend_side = "right",
       annotation_legend_side = "right",
-      padding = unit(c(6, 6, bottom_pad_mm_t, left_pad_mm_t + shift_right_mm), "mm")
+      padding = unit(c(top_pad_mm, right_pad_mm, 8, left_pad_mm), "mm"),
+      merge_legend = TRUE
     )
     dev.off()
     
-    message("Top-30 clear heatmap saved for ", method, " (", n_top, " columns).")
+    message("Top-30 clear heatmap saved for ", method,
+            "  [", n_top, " cols, ", round(png_w_t/dpi,2), "×", round(png_h_t/dpi,2), " in].")
   }
   # ---------- end of Top-30-only clear heatmap ----------
+  
+  
   
 }
 
