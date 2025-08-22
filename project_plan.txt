@@ -57,11 +57,30 @@ Fixed board plan for project:
 	Goals:
 		Identify mutation patterns by species
 		Explore cross-species “common resistance mutations”
-4. Use supervised ML methods to predict what mutations should be observed in a species
-	Planned classifiers: Logistic regression, Random Forest, Neural Networks
-	Target:
-		Predict novel rifampicin resistance mutations
-		Flag mutations likely to be false negatives in current catalogs
-		Generalize predictions to poorly studied species (e.g., M. abscessus, M. fortuitum)
+ 
+4. Use supervised/PU-aware ML to predict which mutations should be observed in a species
+       	Planned classifiers: Logistic Regression, Random Forest, Neural Networks
+	PU treatment: Treat reported mutations as positives, all others as unlabeled; use Elkan–Noto correction (p_true = p_obs / c) and 	U-bagging to handle uncertain negatives.
 
-				
+	Targets:
+
+		Predict novel rifampicin resistance mutations
+
+		Flag likely false negatives in current catalogs
+
+		Generalize to poorly studied species (e.g., M. abscessus, M. fortuitum)
+	Evaluation & validation plan (PU-aware):
+
+		PU-friendly internal validation (mask-then-recover): Randomly mask a fraction of known positives and test recovery among 		unlabeled; report Recall@K (K=1/5/10/20), MRR, nDCG, and threshold-based recall with conservative precision (lower bound).
+
+		External generalization:
+
+		Temporal split: train on papers ≤T, test on >T; measure forward validation (later-confirmed hits among Top-K, lead time).
+
+		LOSO/LOTO: leave-one-species/clade out; evaluate Recall@K/MRR/nDCG on held-out taxa.
+
+		Biological plausibility: Enrichment of predictions in RRDR/active-site/structural pockets; homologous-site concordance 			across species; optional conservation/ΔΔG support.
+
+		Robustness & ablations: Negative controls (decoy mutations), permutation tests, feature ablations (e.g., remove effort / 		same-site alleles / similarity features), calibration (reliability curves), bootstrap CIs.
+
+		Baselines & significance: Compare to frequency ranker, kNN label propagation, NMF/matrix completion, and effort-only 			ranker; report mean ± 95% CI and paired tests (e.g., Wilcoxon) on ranking metrics.
