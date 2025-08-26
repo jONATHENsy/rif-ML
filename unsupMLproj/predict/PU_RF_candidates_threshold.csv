@@ -1,0 +1,13 @@
+Species,p_obs,p_true,Observed,Mutation
+Escherichia coli,0.64584,0.7894582436925485,0,rpoB_D516A
+Pseudomonas putida,0.59024,0.7707361236854934,0,rpoB_Q148R
+Bacillus anthracis,0.56984,0.7440977783968243,0,rpoB_Q148R
+Enterococcus faecium,0.56792,0.7415906400167143,0,rpoB_Q148R
+Mycobacterium tuberculosis,0.55832,0.7290549481161641,0,rpoB_Q148R
+Stutzerimonas stutzeri,0.54816,0.7157880075214151,0,rpoB_Q148R
+Chlamydia trachomatis,0.54728,0.7146389024305313,0,rpoB_Q148R
+Pseudomonas fulva,0.55064,0.7107355522665474,0,rpoB_D516E
+Escherichia coli,0.56144,0.710180125480672,0,rpoB_S509P
+Escherichia coli,0.53504,0.7071511648398124,0,rpoB_S531C
+Escherichia coli,0.53992,0.7050282053067761,0,rpoB_Q148R
+Pseudomonas fluorescens,0.538,0.7025210669266663,0,rpoB_Q148R
