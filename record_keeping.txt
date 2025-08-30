@@ -71,4 +71,11 @@ TO Dos:
 - read and learn more about PU-learning+ RF/Logical regression
 - fix previous plot margin problem
 
-
+Week 26/08/2025
+Meeting:
+- talk about supervised ML output figures,then explained used maskin method
+- discuss about what kind of figure/graph examiers expect to see in the final report
+TO Dos:
+- make boxplot for masked vs unmasked mutations in selected species
+- record and generate more figuresused for final report
+- fix previous plot margin problem
