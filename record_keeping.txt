@@ -79,3 +79,14 @@ TO Dos:
 - make boxplot for masked vs unmasked mutations in selected species
 - record and generate more figuresused for final report
 - fix previous plot margin problem
+
+Week 02/09/2025
+Meeting:
+- talk about future processes could be taken into this supervised ML
+- discuss about why some exists mutation is shown in the prediction, then find out they are
+not lab mutant type didn't be included in processed data.
+TO Dos:
+- Try to remove the same mutations in the prediction results as those in the 
+Google file that are already included in the "non-laboratory mutants"
+- start to record evaluations and conclusions for supervised ML results
+- fix previous top30 unsupervised Ml plot margin problem
