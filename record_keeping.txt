@@ -90,3 +90,21 @@ TO Dos:
 Google file that are already included in the "non-laboratory mutants"
 - start to record evaluations and conclusions for supervised ML results
 - fix previous top30 unsupervised Ml plot margin problem
+
+Week 09/09/2025
+Meeting:
+- talk about prediction result an method of removing non-lab mutant mutations.
+- discuss about what kind of content need to be written into supervisedMl part in final paper
+TO Dos:
+- plot new figures for novel mutations' prediction(without natural isolated/construct)
+- written description and analysis of unsupervised machine learning method and result
+
+Week 18/09/2025
+Meeting:
+- talk about what kind of figures need to keep/select to display in final report/poster.
+- explain the entire supervised Ml process and discuss about future improvement.
+- professor helped to find some problem left in the above figures.
+TO Dos:
+- fix previous X-axis label problem in the candidate mutations plot
+- improve boxplot for maskvsunmask in different species ,let them display in the same coordinate
+- try to find other hidden problem in the exists supervised Ml part.
