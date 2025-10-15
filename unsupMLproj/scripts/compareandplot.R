@@ -38,11 +38,14 @@ shift_right_mm <- 28  # 24~40 之间调；不改其它配置
 
 # ---------------- 路径 ----------------
 base_dir <- "C:/Users/user/Desktop/D Drive/2025s1/BIOX7011/rif-ML/unsupMLproj"
-fig_dir  <- file.path(base_dir, "figures", "filtered_h02")
+fig_dir  <- file.path(base_dir, "figures", "filtered_mh03")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---------------- 数据 ----------------
-mat_path   <- file.path(base_dir, "output", "X_dense_high.RDS")
+mat_path   <- file.path(base_dir, "output", "X_dense_midhigh.RDS")
+X_dense_midhigh <- readRDS(file.path(base_dir, "output", "X_dense_midhigh.RDS"))
+
+
 # 可选：如果有外部聚类标签文件，这里给出路径；没有也没关系
 label_file <- file.path(base_dir, "output", "cluster_labels_filtered.csv")
 
@@ -281,7 +284,7 @@ for (method in top_methods) {
   dev.off()
   message("PDF saved: ", out_pdf)
   
-  # ---------- Top-30-only clear heatmap (fixed width & padding) ----------
+  # ---------- Top-30-only heatmap (minimal defaults) ----------
   ord_try <- try(ComplexHeatmap::column_order(ht_drawn), silent = TRUE)
   if (!inherits(ord_try, "try-error")) {
     ord_vec <- if (is.list(ord_try)) ord_try[[1]] else ord_try
@@ -294,92 +297,39 @@ for (method in top_methods) {
   if (length(keep_cols) == 0) {
     message("No overlap between matrix columns and top30 for ", method, "; skip top30 plot.")
   } else {
-    sub_mat_top <- sub_mat[, keep_cols, drop = FALSE]
-    
-    # —— 关键：用“像素”控制列宽/行高，并把左/右留白精确转为像素 —— #
+    # 假设你已经有 sub_mat_top / row_anno
     n_top <- ncol(sub_mat_top)
     n_sp  <- nrow(sub_mat_top)
-    dpi   <- 300
     
-    col_px <- 70     # 每一列的目标像素宽度（更宽更清爽；可调 60–90）
-    row_px <- 26     # 每一行的目标像素高度（可调 22–30）
-    
-    left_pad_mm  <- 6    # top30 不再额外右移，避免重复留白
-    right_pad_mm <- 45   # 为右侧图例和注释条留足空间（很重要）
-    top_pad_mm   <- 6
-    
-    # 把 mm 换算为像素
-    mm2px <- function(mm, dpi) mm / 25.4 * dpi
-    left_pad_px   <- mm2px(left_pad_mm,  dpi)
-    right_pad_px  <- mm2px(right_pad_mm, dpi)
-    top_pad_px    <- mm2px(top_pad_mm,   dpi)
-    
-    # 画布宽高（像素）：= 左留白 + 列宽*n_top + 右留白
-    png_w_t <- ceiling(left_pad_px + n_top * col_px + right_pad_px)
-    # 高度：给行名 + 热图 + (旋转列名占的“高度”)
-    # 列名高度由 ComplexHeatmap 处理，这里主要保证行方向有足够空间
-    png_h_t <- max(1200, ceiling(n_sp * row_px + top_pad_px + 80))
-    
-    # 文本样式与最大宽/高（不过度放大）
-    rowlab_w_t <- ComplexHeatmap::max_text_width(rownames(sub_mat_top),
-                                                 gp = gpar(fontsize = 10))
-    collab_h_t <- unit(12, "mm")  # 给列名留 12mm 高度（旋转 90°）
+    png(file.path(fig_dir, sprintf("heatmap_%s_top30_simple.png", method)),
+        width  = max(1800, n_top * 36),   # 每列 ~36px
+        height = max(1200, n_sp  * 28),   # 每行 ~28px
+        res = 200, type = "cairo-png")
     
     ht_top <- ComplexHeatmap::Heatmap(
       sub_mat_top,
       name = "Mut",
-      col = c("0" = "white", "1" = "steelblue"),
+      col = c("0"="white","1"="steelblue"),
       cluster_rows = FALSE,
-      cluster_columns = FALSE,      # 固定使用完整图里的列顺序
+      cluster_columns = FALSE,
       row_split = umap_df$Cluster,
-      
-      show_row_names = TRUE,
-      row_names_side = "left",
-      row_names_gp   = gpar(fontsize = 10),
-      row_names_max_width = rowlab_w_t,
-      
-      show_column_names = TRUE,
-      column_names_rot  = 90,
-      column_names_gp   = gpar(fontsize = 9),
-      column_names_centered = TRUE,
-      column_names_max_height = collab_h_t,
-      
-      right_annotation = row_anno,   # 复用完整图的行注释
-      width  = unit(1, "npc"),
-      height = unit(1, "npc"),
-      use_raster = TRUE,
-      raster_device = "png"
+      show_row_names = TRUE,  row_names_gp = grid::gpar(fontsize = 9),
+      show_column_names = TRUE, column_names_rot = 90, column_names_gp = grid::gpar(fontsize = 7),
+      right_annotation = row_anno
     )
     
-    # —— 真正绘图：右侧给足 padding，避免图例挤到热图上 —— #
-    png(file.path(fig_dir, sprintf("heatmap_%s_top30.png", method)),
-        width = png_w_t, height = png_h_t, res = dpi, type = "cairo-png")
-    ComplexHeatmap::draw(
-      ht_top,
-      heatmap_legend_side = "right",
-      annotation_legend_side = "right",
-      # padding 顺序：top, right, bottom, left
-      padding = unit(c(top_pad_mm, right_pad_mm, 8, left_pad_mm), "mm"),
-      merge_legend = TRUE
-    )
+    ComplexHeatmap::draw(ht_top,
+                         heatmap_legend_side = "right",
+                         annotation_legend_side = "right"
+    )  # ← 不再手动 padding（保持最小改动）
+    
     dev.off()
     
-    # 同步生成 PDF（宽高与 PNG 对齐换算）
-    pdf(file.path(fig_dir, sprintf("heatmap_%s_top30.pdf", method)),
-        width  = png_w_t / dpi,
-        height = png_h_t / dpi)
-    ComplexHeatmap::draw(
-      ht_top,
-      heatmap_legend_side = "right",
-      annotation_legend_side = "right",
-      padding = unit(c(top_pad_mm, right_pad_mm, 8, left_pad_mm), "mm"),
-      merge_legend = TRUE
-    )
-    dev.off()
-    
-    message("Top-30 clear heatmap saved for ", method,
-            "  [", n_top, " cols, ", round(png_w_t/dpi,2), "×", round(png_h_t/dpi,2), " in].")
+    # pdf(file.path(fig_dir, sprintf("heatmap_%s_top30.pdf", method)))
+    # ComplexHeatmap::draw(ht_top)
+    # dev.off()
   }
+  
   # ---------- end of Top-30-only clear heatmap ----------
   
   
@@ -413,3 +363,194 @@ upset(inverted_df[, -ncol(inverted_df)], nsets = 10, nintersects = 30,
 dev.off()
 
 message("✅ Done – auto-selected top methods: ", paste(top_methods, collapse = ", "))
+
+
+## ============================ #
+##  Config
+## ============================ #
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr); library(ggplot2); library(UpSetR)
+})
+
+stopifnot(exists("X_dense_midhigh"))
+
+# 输出目录（按你自己的路径来）
+if (!exists("fig_dir")) fig_dir <- "figures"
+if (!dir.exists(fig_dir)) dir.create(fig_dir, recursive = TRUE)
+stats_dir <- file.path(fig_dir, "stats")
+if (!dir.exists(stats_dir)) dir.create(stats_dir, recursive = TRUE)
+
+mat <- as.matrix(X_dense_midhigh)
+mat[is.na(mat)] <- 0
+
+## ============================ #
+##  1) 物种 → Gram 分组（自动映射，可覆盖）
+## ============================ #
+species <- rownames(mat)
+get_genus <- function(x) sub("\\s+.*$", "", x)
+
+genus <- get_genus(species)
+
+GRAM_NEG <- c("Escherichia","Salmonella","Pseudomonas","Acinetobacter",
+              "Klebsiella","Enterobacter","Proteus","Campylobacter",
+              "Helicobacter","Vibrio","Neisseria","Haemophilus",
+              "Legionella","Bordetella","Shigella","Serratia")
+GRAM_POS <- c("Staphylococcus","Streptococcus","Enterococcus","Bacillus",
+              "Listeria","Clostridium","Corynebacterium","Streptomyces",
+              "Lactobacillus","Mycolicibacterium?NO","Bifidobacterium") # Mycobacterium 不放这里
+ATYPICAL <- c("Mycobacterium","Mycolicibacterium","Chlamydia","Chlamydophila",
+              "Mycoplasma","Ureaplasma","Coxiella","Rickettsia","Deinococcus")
+
+guess_group <- function(g){
+  if (g %in% GRAM_NEG) return("GramNeg")
+  if (g %in% GRAM_POS) return("GramPos")
+  if (g %in% ATYPICAL) return("ATYP")
+  return("UNK")
+}
+
+gram_vec <- vapply(genus, guess_group, character(1))
+gram_map <- data.frame(Species = species, Genus = genus, Gram = gram_vec, 
+                       stringsAsFactors = FALSE)
+
+# 你也可以在这里手工修正：
+# gram_map$Gram[gram_map$Genus == "Mycobacterium"] <- "ATYP"
+# gram_map$Gram[gram_map$Genus == "Deinococcus"]   <- "ATYP"
+# gram_map$Gram[gram_map$Genus == "Staphylococcus"]<- "GramPos"
+# gram_map$Gram[gram_map$Genus == "Pseudomonas"]   <- "GramNeg"
+# ...（如需）
+
+# 主比较仅使用 GramNeg / GramPos；ATYP 与 UNK 可用于附录或单独探索
+keep_groups <- c("GramNeg","GramPos")
+keep_species <- gram_map %>% filter(Gram %in% keep_groups) %>% pull(Species)
+mat2 <- mat[keep_species, , drop = FALSE]
+gram_map2 <- gram_map %>% filter(Species %in% keep_species)
+
+## ============================ #
+##  2) 选择代表性突变（手动优先；否则自动Top）
+## ============================ #
+# 手动清单（不存在的会被自动剔除）
+mut_manual <- c("rpoB_H526R","rpoB_H526Y","rpoB_H526D",
+                "rpoB_S531L","rpoB_S531F",
+                "rpoB_D516V","rpoB_D516G","rpoB_D516N",
+                "rpoB_Q148R","rpoB_L533R","rpoB_S513R","rpoB_S513K","rpoB_P564L")
+
+mut_manual <- mut_manual[mut_manual %in% colnames(mat2)]
+
+if (length(mut_manual) < 10) {
+  # 不足时用总体最常见的补齐到 12 个
+  top_auto <- names(sort(colSums(mat2), decreasing = TRUE))
+  top_auto <- setdiff(top_auto, mut_manual)
+  sel <- unique(c(mut_manual, head(top_auto, 12 - length(mut_manual))))
+} else {
+  sel <- mut_manual
+}
+
+if (length(sel) < 2) stop("Selected mutation set too small. Check column names in X_dense_midhigh.")
+
+message("Selected mutations: ", paste(sel, collapse = ", "))
+
+## ============================ #
+##  3) 两张 UpSet：GramNeg 与 GramPos
+## ============================ #
+plot_upset_for_group <- function(group_label){
+  sp <- gram_map2 %>% filter(Gram == group_label) %>% pull(Species)
+  sub <- mat2[sp, sel, drop = FALSE]
+  # UpSetR 需要：列为集合；我们要“突变为集合”，元素是物种
+  df <- as.data.frame(sub)
+  df$Species <- rownames(sub)
+  df <- df %>% relocate(Species, .after = dplyr::last_col())
+  out <- file.path(fig_dir, sprintf("upset_%s_selMuts.png", group_label))
+  png(out, width = 1700, height = 1100, res = 130)
+  upset(df[, -ncol(df)], nsets = ncol(sub), nintersects = 30,
+        order.by = "freq", keep.order = TRUE,
+        sets.bar.color = ifelse(group_label == "GramNeg","steelblue","tomato"),
+        mainbar.y.label = sprintf("Number of %s species", group_label),
+        sets.x.label   = "Selected mutations")
+  dev.off()
+  message("Saved: ", out)
+}
+
+plot_upset_for_group("GramNeg")
+plot_upset_for_group("GramPos")
+
+## ============================ #
+##  4) 条图：每个突变在 GramNeg/GramPos 的出现比例
+## ============================ #
+prop_by_group <- function(group_label){
+  sp <- gram_map2 %>% filter(Gram == group_label) %>% pull(Species)
+  sub <- mat2[sp, sel, drop = FALSE]
+  tibble(
+    Mutation = sel,
+    n_species = length(sp),
+    n_present = colSums(sub > 0, na.rm = TRUE),
+    prop = n_present / n_species,
+    Group = group_label
+  )
+}
+prop_df <- bind_rows(prop_by_group("GramNeg"), prop_by_group("GramPos"))
+
+# 让条图可读：按 GramNeg 与 GramPos 的差排序
+order_mut <- prop_df %>% 
+  select(Mutation, Group, prop) %>% 
+  pivot_wider(names_from = Group, values_from = prop) %>%
+  mutate(diff = GramNeg - GramPos) %>%
+  arrange(desc(abs(diff))) %>%
+  pull(Mutation)
+
+prop_df$Mutation <- factor(prop_df$Mutation, levels = order_mut)
+
+p <- ggplot(prop_df, aes(Mutation, prop, fill = Group)) +
+  geom_col(position = position_dodge(width = 0.75), width = 0.7) +
+  geom_text(aes(label = n_present),
+            position = position_dodge(width = 0.75),
+            vjust = -0.3, size = 3) +
+  coord_cartesian(ylim = c(0, 1.05)) +
+  labs(y = "Proportion of species with mutation",
+       x = NULL, title = "Selected rpoB mutations: Gram– vs Gram+") +
+  theme_bw(base_size = 12) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggsave(file.path(fig_dir, "bar_selectedMuts_gram_compare.png"), p,
+       width = 12, height = 6, dpi = 150)
+message("Saved: ", file.path(fig_dir, "bar_selectedMuts_gram_compare.png"))
+
+## ============================ #
+##  5) Fisher 精确检验（OR, CI, P, FDR）
+## ============================ #
+fisher_rows <- lapply(sel, function(mut){
+  sp_neg <- gram_map2 %>% filter(Gram == "GramNeg") %>% pull(Species)
+  sp_pos <- gram_map2 %>% filter(Gram == "GramPos") %>% pull(Species)
+  x_neg <- sum(mat2[sp_neg, mut] > 0, na.rm = TRUE)
+  n_neg <- length(sp_neg)
+  x_pos <- sum(mat2[sp_pos, mut] > 0, na.rm = TRUE)
+  n_pos <- length(sp_pos)
+  
+  tab <- matrix(c(x_neg, n_neg - x_neg, x_pos, n_pos - x_pos), nrow = 2, byrow = TRUE,
+                dimnames = list(c("GramNeg","GramPos"), c("Mut+","Mut-")))
+  ft <- suppressWarnings(fisher.test(tab, alternative = "two.sided"))
+  data.frame(
+    Mutation = mut,
+    Neg_with = x_neg, Neg_without = n_neg - x_neg, Pos_with = x_pos, Pos_without = n_pos - x_pos,
+    Neg_prop = x_neg / n_neg, Pos_prop = x_pos / n_pos,
+    OR = unname(ifelse(is.null(ft$estimate), NA, ft$estimate)),
+    CI_low = ifelse(is.null(ft$conf.int), NA, ft$conf.int[1]),
+    CI_high = ifelse(is.null(ft$conf.int), NA, ft$conf.int[2]),
+    P_value = ft$p.value,
+    stringsAsFactors = FALSE
+  )
+})
+
+fisher_tbl <- bind_rows(fisher_rows) %>%
+  mutate(FDR = p.adjust(P_value, method = "BH")) %>%
+  arrange(FDR)
+
+write.csv(fisher_tbl, file.path(stats_dir, "fisher_selectedMuts_GramNeg_vs_GramPos.csv"),
+          row.names = FALSE)
+message("Saved: ", file.path(stats_dir, "fisher_selectedMuts_GramNeg_vs_GramPos.csv"))
+
+## ===== 小结 =====
+# 生成的文件：
+# - figures/upset_GramNeg_selMuts.png
+# - figures/upset_GramPos_selMuts.png
+# - figures/bar_selectedMuts_gram_compare.png
+# - figures/stats/fisher_selectedMuts_GramNeg_vs_GramPos.csv
+

@@ -23,10 +23,10 @@ muts <- read_sheet(
   sheet = "Data", col_types = "c") |>
   filter(substr(Ref_code, 1, 4) != "ALJE",
          Gene == "rpoB",
-         Origin %in% "Lab mutant") |>
+         Origin %in% "Isolate") |>
   arrange(Species, Ref_code, AA_pos, AA_pos_Ecoli)
 
-write_csv(muts, file.path(base_dir, "data", "lab_reported_mutations.csv"))
+write_csv(muts, file.path(base_dir, "data", "allother_mutations.csv"))
 
 # -------------------------------------------------
 # 3. 下载 References
@@ -85,4 +85,4 @@ muts_completed <- mutation_list_reports |>
   fillMutationsTable(refs_tbl, seqs, coordinates) |>
   filter(!is.na(AA_mut_name_Ecoli))
 
-write_csv(muts_completed, file.path(base_dir, "output", "labmuts.csv"))
+write_csv(muts_completed, file.path(base_dir, "output", "othermuts.csv"))

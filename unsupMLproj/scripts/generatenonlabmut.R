@@ -1,106 +1,65 @@
 suppressPackageStartupMessages({
-  library(googlesheets4)
-  library(dplyr)
-  library(readr)
-  library(ALJEbinf)
-  library(Biostrings)
-  library(openssl)
+  library(dplyr); library(readr); library(googlesheets4)
+  library(ALJEbinf); library(Biostrings)
 })
 
-# ---------- 可选：基准目录 ----------
+# 1) 基础路径
 if (!exists("base_dir")) base_dir <- getwd()
-data_dir  <- file.path(base_dir, "data")
-out_dir   <- file.path(base_dir, "output")
+data_dir <- file.path(base_dir, "data")
+ref_dir  <- file.path(base_dir, "reference")
+out_dir  <- file.path(base_dir, "output")
 dir.create(data_dir, showWarnings = FALSE, recursive = TRUE)
 dir.create(out_dir,  showWarnings = FALSE, recursive = TRUE)
 
-gs4_deauth()   # 公开表，无需 OAuth
+# 2) 复用坐标（不存在就报错）
+coords_file <- file.path(out_dir, "coordinates.RData")
+if (!file.exists(coords_file)) {
+  stop("未找到 ", coords_file, "。请先用你原先脚本生成一次 coordinates.RData。")
+}
+load(coords_file)  # 提供对象：coordinates
 
+# 3) 读取与坐标匹配的参考（必须与生成 coordinates 用的是同一 FASTA）
+refs_tbl <- read_csv(file.path(data_dir, "rpoB_reference.csv"), show_col_types = FALSE)
+seqs     <- readDNAStringSet(file.path(ref_dir, "rpoB_references.fasta"))
+
+# 4) 下载“非 Lab mutant”记录并最小清洗
+gs4_deauth()
 norm_origin <- function(x) trimws(tolower(x))
 
-# -------------------------------------------------
-# 1) 下载并保存「非 Lab Mutant」原始行
-# -------------------------------------------------
-muts <- read_sheet(
+nonlab_df <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-OihBy1WlfU46_npueE-ZJhmo1eH4eJf7BslsAVh6jc",
   sheet = "Data", col_types = "c"
-) %>%
+) |>
   filter(
     !startsWith(Ref_code, "ALJE"),
     Gene == "rpoB",
-    is.na(Origin) | norm_origin(Origin) != "lab mutant"  # 反选（鲁棒）
-  ) %>%
+    is.na(Origin) | norm_origin(Origin) != "lab mutant"
+  ) |>
+  mutate(across(where(is.character), ~ na_if(., ""))) |>
   mutate(
-    across(everything(), ~na_if(., "")),
-    AA_pos       = suppressWarnings(as.integer(AA_pos)),
-    AA_pos_Ecoli = suppressWarnings(as.integer(AA_pos_Ecoli))
-  ) %>%
+    AA_pos        = suppressWarnings(as.integer(AA_pos)),
+    AA_pos_Ecoli  = suppressWarnings(as.integer(AA_pos_Ecoli)),
+    Nt_pos        = suppressWarnings(as.integer(Nt_pos)),
+    # 核心：补 Nt_pos，避免 fillMutationsTable 在 NA 上报错
+    Nt_pos = ifelse(is.na(Nt_pos) & !is.na(AA_pos),       3L * AA_pos       - 2L, Nt_pos),
+    Nt_pos = ifelse(is.na(Nt_pos) & !is.na(AA_pos_Ecoli), 3L * AA_pos_Ecoli - 2L, Nt_pos)
+  ) |>
+  filter(!is.na(Nt_pos)) |>
   arrange(Species, Ref_code, AA_pos, AA_pos_Ecoli)
 
-write_csv(muts, file.path(data_dir, "allother_mutations.csv"))
-message(sprintf("非 Lab Mutant 原始行数：%d", nrow(muts)))
+write_csv(nonlab_df, file.path(data_dir, "nonlab_reported_mutations.csv"))
 
-# -------------------------------------------------
-# 2) 下载并保存 References（去掉末尾句号）
-# -------------------------------------------------
-refs <- read_sheet(
-  "https://docs.google.com/spreadsheets/d/1-OihBy1WlfU46_npueE-ZJhmo1eH4eJf7BslsAVh6jc",
-  sheet = "References", col_types = "c"
-) %>%
-  select(-Comments) %>%
-  mutate(DOI = sub("\\.$", "", Link)) %>%
-  select(-Link) %>%
-  arrange(Ref_code)
-
-if (length(refs$Ref_code) != length(unique(refs$Ref_code))) {
-  warning("Duplicated Ref_code entries detected in References!")
-}
-write_csv(refs, file.path(data_dir, "reports_references.csv"))
-
-# -------------------------------------------------
-# 3) 读取本地 reference FASTA / CSV
-# -------------------------------------------------
-refs_tbl <- read_csv(file.path(data_dir, "rpoB_reference.csv"),
-                     show_col_types = FALSE)
-seqs  <- readDNAStringSet(file.path(data_dir, "rpoB_references.fasta"))
-
-# -------------------------------------------------
-# 4) 生成或读取坐标（按 fasta 的 sha1 缓存）
-# -------------------------------------------------
-fastahash_file <- file.path(data_dir, "fastahash.Rds")
-coords_file    <- file.path(out_dir,  "coordinates.RData")
-fasta_sha1     <- as.character(sha1(file(file.path(data_dir, "rpoB_references.fasta"))))
-
-if (file.exists(fastahash_file) && identical(readRDS(fastahash_file), fasta_sha1)) {
-  message("Sequences unchanged, loading saved coordinates.")
-  load(coords_file)  # 加载对象：coordinates
-} else {
-  message("Sequences updated, rebuilding coordinates.")
-  coordinates <- ALJEbinf::getAllCoordinates(
-    seqs, "rpoB_Escherichia_coli_MG1655"
-  )
-  saveRDS(fasta_sha1, fastahash_file)
-  save(coordinates, file = coords_file)
-}
-
-# -------------------------------------------------
-# 5) 用非 Lab Mutant 数据生成完整突变表
-#    关键修复：删除核苷酸层面的列，避免 NA 触发 if(NA) 报错
-# -------------------------------------------------
-mutation_list_reports <- muts %>%
-  select(-any_of(c("Nt_pos","Nt_from","Nt_to","Nt_ref","Nt_mut",
-                   "Nucleotide_change","Codon_pos")))
-
-muts_completed <- mutation_list_reports %>%
-  ALJEbinf::fillMutationsTable(refs_tbl, seqs, coordinates) %>%
+# 5) 坐标化（用“旧坐标”）
+nonlab_done <- nonlab_df |>
+  ALJEbinf::fillMutationsTable(refs_tbl, seqs, coordinates) |>
   filter(!is.na(AA_mut_name_Ecoli))
 
-# 保险起见：再次确认未混入 Lab Mutant
-if (any(norm_origin(muts_completed$Origin) == "lab mutant", na.rm = TRUE)) {
-  stop("检测到 Lab Mutant 混入，请检查上游筛选。")
-}
+# 6) 输出
+write_csv(nonlab_done, file.path(out_dir, "nonlabmuts.csv"))
+write_lines(unique(na.omit(nonlab_done$AA_mut_name_Ecoli)),
+            file.path(out_dir, "seen_ecoli_mutations.txt"))
 
-# 输出
-out_file <- file.path(out_dir, "nonlabmutant_results.csv")
-write_csv(muts_completed, out_file)
-message(sprintf("已写出：%s（行数：%d）", out_file, nrow(muts_completed)))
+# 保险：确认没混入 Lab mutant
+stopifnot(!any(norm_origin(nonlab_done$Origin) == "lab mutant", na.rm = TRUE))
+
+
