@@ -1,0 +1,697 @@
+Species,Strain,Genotype,Gene,Nt_pos,Nt_pos_Ecoli,Nt_original,Nt_mutation,Nt_OtoM,Nt_mut_name,Nt_mut_name_Ecoli,Codon_original,Codon_mutation,Codon_OtoM,AA_pos,AA_pos_Ecoli,AA_original,AA_mutation,AA_OtoM,AA_mut_name,AA_mut_name_Ecoli,Origin,MIC_mgPerL,Rel_fitness,n_clones,Comments,Ref_code,Entry_by,...29,...30,...31,...32,...33,...34,...35,...36,...37,...38,...39,...40,...41,...42,...43,...44,...45,...46,...47
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,NA,D,V,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,NA,D,Y,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,NA,D,G,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,535,NA,H,L,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,535,NA,H,N,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,535,NA,H,Q,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,NA,S,Y,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,544,NA,P,L,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acinetobacter baumannii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,544,NA,P,L,NA,NA,NA,Isolate,512,NA,NA,NA,Giannouli2012,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bacillus subtilis,NA,NA,rpoB,NA,NA,C,G,C>G,NA,NA,CAG,CGG,CAG→CGG,469,Q513 (E. coli),Q,R,NA,Q469R,Q513R,Isolate,>4,NA,1,Slightly higher CEF resistance (10.24 vs 5.12 WT); moderate cross-resistance.,Patel2023,Yu Sun,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bacillus subtilis,NA,NA,rpoB,NA,NA,C,T,C>T,NA,NA,CAC,TAC,CAC→TAC,482,H526 (E. coli),H,Y,NA,H482Y,H526Y,Isolate,>4,NA,1,Very sensitive to CEF; 32-fold lower CEF MIC (0.16 vs 5.12 WT).,Patel2023,Yu Sun,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,443,NA,A,S,NA,NA,NA,Isolate,NA,NA,NA,*intrinsically resistant,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,443,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,R,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,NA,V,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,NA,E,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,532,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,532,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,NA,A,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,534,NA,E,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,543,NA,E,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,NA,K,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,554,NA,Q,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,557,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,559,NA,V,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,560,NA,G,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,561,NA,E,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,562,NA,E,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,565,NA,V,E,NA,NA,NA,Isolate,NA,NA,NA,position 563-569 do not exist in E. coli/paper is checked,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,570,NA,S,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,571,NA,S,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium adolescentis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,585,NA,V,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Lokesh2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,502,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,NA,A,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,534,NA,E,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,NA,K,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,554,NA,Q,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bifidobacterium breve,PRL2020,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,585,NA,V,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Di Pierro2023,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Borrelia burgdorferi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,*intrinsically resistant,Alekshun1997,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cutibacterium acnes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,440,NA,R,H,NA,NA,NA,Isolate,32,NA,NA,"formerly ""Propionibacterium acnes""",FurustrandTafin2015,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cutibacterium acnes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,NA,S,L,NA,NA,NA,Isolate,32,NA,NA,"formerly ""Propionibacterium acnes""",FurustrandTafin2015,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cutibacterium acnes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,NA,S,W,NA,NA,NA,Isolate,32,NA,NA,"formerly ""Propionibacterium acnes""",FurustrandTafin2015,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cutibacterium acnes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,480,NA,L,V,NA,NA,NA,Isolate,32,NA,NA,"formerly ""Propionibacterium acnes""",FurustrandTafin2015,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,532,532,A,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,507-511,507-511,G S S Q L,NA,NA,NA,NA,Isolate,NA,NA,NA,not a point mutation,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,513,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,516,D,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,517,517,D,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,522,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,529,529,R,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,529,529,R,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,531,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,563,563,T,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,564,564,P,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,572,572,I,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Escherichia coli,MG1655,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,687,687,R,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Xu2005,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,516,D,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,516,D,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,518,518,N,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,533,L,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,572,572,I,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemophilus influenzae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,608,608,V,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Cruchaga2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,G,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,Y,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,E,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,N,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,NA,H,N,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,S,L,NA,NA,NA,Isolate,>32,NA,NA,NA,Erik2007,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,D,N,NA,NA,NA,Isolate,4,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,NA,L,I,NA,NA,NA,Isolate,16,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,G,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,Y,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,E,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,N,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,NA,H,N,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,547,NA,L,F,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,2802A,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,657,NA,V,I,NA,NA,NA,Isolate,>32,NA,NA,NA,Hays2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,Y,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,N,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,V,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,530,NA,D,I,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,NA,H,N,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,NA,H,Y,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,S,L,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,S,W,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,586,NA,I,L,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,586,NA,I,L,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helicobacter pylori,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,586,NA,I,F,NA,NA,NA,Isolate,>256,NA,NA,NA,Heep2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leptospira biflexa,AF150880,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Lee2000,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,488,NA,S,L,NA,NA,NA,Isolate,>32,NA,NA,NA,ChenalFrancisque2014,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,466,NA,S,P,NA,NA,NA,Isolate,2,0.839 ± 0.052,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,470,NA,Q,K,NA,NA,NA,Isolate,>256,0.991 ± 0.026,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,473,NA,D,N,NA,NA,NA,Isolate,2,0.893 ± 0.028,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,479,NA,G,D,NA,NA,NA,Isolate,NA,0.812 ± 0.094,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,483,NA,H,Y,NA,NA,NA,Isolate,256,0.703 ± 0.064,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,483,NA,H,R,NA,NA,NA,Isolate,256,0.885 ± 0.015,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,483,NA,H,D,NA,NA,NA,Isolate,256,0.877 ± 0.035,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,R,H,NA,NA,NA,Isolate,256,0.76 ± 0.028,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,490,NA,L,P,NA,NA,NA,Isolate,1,0.846 ± 0.053,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Listeria monocytogenes,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,521,NA,P,L,NA,NA,NA,Isolate,1,0.055 ± 0.032,NA,NA,Korsak2016,Mary Gannon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,456,NA,T,I,NA,NA,NA,Isolate,>30,NA,NA,Checked,Beckler2008,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,544,NA,G,D,NA,NA,NA,Isolate,>32,NA,NA,Checked,Obata2006,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium avium,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium gastri,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium gastri,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium gastri,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium intracellulare,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,506,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium kansasii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Klein2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium kansasii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Klein2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium kansasii,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Klein2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,531,S,F,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Honore1993,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Honore1993,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,531,S,M,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Honore1993,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,416,NA,S,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Honore2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,420,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Honore2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Honore2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Honore2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,NA,S,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Honore2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"433, 441",NA,"T, D","I, Y",NA,NA,NA,Isolate,NA,NA,NA,NA,Lavania2014,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,439,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Lavania2014,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,NA,Q,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Lavania2014,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,424,NA,V,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Lavania2016,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,438,NA,Q,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lavania2016,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,D,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Maeda2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,451,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Maeda2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,456,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Maeda2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,456,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Maeda2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,458,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Maeda2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,510,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Siskawati2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,525,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Siskawati2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Vedithi2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Vedithi2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Vedithi2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,476,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Vedithi2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium leprae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,427,NA,T,I,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,428,NA,S,G,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,428,NA,S,I,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,428,NA,S,R,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,428,NA,S,T,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,429,NA,Q,H,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,429,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,429,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,431,NA,S,R,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,E,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,H,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,I,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,V,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,A,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,F,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,H,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,436,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,D,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,I,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,A,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,V,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,NA,G,E,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,444,NA,T,I,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,F,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,S,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,G,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,446,NA,K,E,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,446,NA,K,R,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,446,NA,K,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,448,NA,R,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,449,NA,L,M,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,G,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,A,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,M,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,451,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,452,NA,L,V,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,452,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,CRyPTIC2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,T,C,NA,NA,NA,NA,NA,NA,430,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,T,C,NA,NA,NA,NA,NA,NA,431,NA,S,T,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,A,NA,NA,NA,NA,NA,NA,432,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,433,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,G,T,NA,NA,NA,NA,NA,NA,434,NA,M,I,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,I,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,A,G,NA,NA,NA,NA,NA,NA,435,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,A,G,NA,NA,NA,NA,NA,NA,435,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,T,NA,NA,NA,NA,NA,NA,435,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,G,A,NA,NA,NA,NA,NA,NA,435,NA,D,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,440,NA,L,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,G,NA,NA,NA,NA,NA,NA,452,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,170,V,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Campbell2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,T,C,NA,NA,NA,NA,NA,NA,430,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,A,G,NA,NA,NA,NA,NA,NA,434,NA,M,V,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,A,T,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,G,T,NA,NA,NA,NA,NA,NA,435,NA,D,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,T,C,NA,NA,NA,NA,NA,NA,435,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,same isolate as above,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,T,NA,NA,NA,NA,NA,NA,441,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,G,NA,NA,NA,NA,NA,NA,441,NA,S,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,A,T,NA,NA,NA,NA,NA,NA,445,NA,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,G,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,T,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,T,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,G,NA,NA,NA,NA,NA,NA,450,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,A,NA,NA,NA,NA,NA,NA,450,NA,S,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,"from C, G -> T, C",Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,C,T,NA,NA,NA,NA,NA,NA,451,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,T,C,NA,NA,NA,NA,NA,NA,452,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Guo2021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1162,NA,R,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1162,NA,R,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1163,NA,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1163,NA,N,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1164,NA,E,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1167,NA,S,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,274,NA,K,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,286,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,448,NA,R,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,452,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Hameed2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GTC,TTC,NA,NA,146,V,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,511,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AGC,CGC,NA,NA,512,S,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,AAA,NA,NA,513,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,TAC,NA,NA,516,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GGC,NA,NA,516,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,CAG,NA,NA,522,S,Q,NA,NA,NA,Isolate,NA,NA,NA,More than one nucleotide differences between Codon_original and mutated,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TGC,NA,NA,526,H,C,NA,NA,NA,Isolate,NA,NA,NA,More than one nucleotide differences between Codon_original and mutated,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CGC,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CAA,NA,NA,526,H,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TGG,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,GCG,NA,NA,531,S,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,ATC,ACC,NA,NA,561,I,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,GTG,NA,NA,571,L,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Heep2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,511,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CGG,NA,NA,511,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AGC,ACC,NA,NA,512,S,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,CTA,NA,NA,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,AAA,NA,NA,513,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,TAC,NA,NA,516,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GAG,NA,NA,516,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CTC,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CGC,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CAA,NA,NA,526,H,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TGT,NA,NA,531,S,C,NA,NA,NA,Isolate,NA,NA,NA,More than one nucleotide differences between Codon_original,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TGG,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Kapur1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,452,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,I,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,I,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Li2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,512,S,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Lu2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,511,L,R,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,K,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,L,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,Y,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,16,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,8,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,528,L,P,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,>32,NA,NA,NA,Moghazeh1996,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,515,M,V,NA,NA,NA,Isolate,0.063,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,Y,NA,NA,NA,Isolate,256,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,4,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,>512,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,P,NA,NA,NA,Isolate,512,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,512,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,256,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,16,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,G,NA,NA,NA,Isolate,8,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,>512,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,512,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,128,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,64,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,1,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,0.5,NA,NA,NA,Ohno1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GGC,NA,NA,526,H,G,NA,NA,NA,Isolate,NA,NA,NA,More than one nucleotide differences between Codon_original and mutated,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CTC,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CGC,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Pang2013,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,170,NA,V,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,426,NA,G,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,427,NA,T,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,429,NA,Q,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,430,NA,L,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,431,NA,S,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,431,NA,S,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,432,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,433,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,I,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,434,NA,M,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,437,NA,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,440,NA,L,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,452,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,454,NA,G,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,I,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,ATG,ATA,NA,NA,515,M,I,NA,NA,NA,Isolate,NA,NA,NA,NA,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,ACC,NA,NA,526,H,T,NA,NA,NA,Isolate,NA,NA,NA,More than one nucleotide differences between Codon_original and mutated,Ramaswamy1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,146,NA,V,F,NA,NA,NA,Isolate,64,NA,NA,NA,Siu2011,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,572,NA,I,F,NA,NA,NA,Isolate,16,NA,NA,NA,Siu2011,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GCG,GTG,NA,NA,381,A,V,NA,NA,NA,Isolate,200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,CTA,NA,NA,513,Q,L,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TTC,TTG,NA,NA,514,F,L,NA,NA,NA,Isolate,12.5,NA,NA,Same isolate as below,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GCC,NA,NA,516,D,A,NA,NA,NA,Isolate,>200,NA,NA,Same isolate as below,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,Same isolate as above,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAG,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,Same isolate as above,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CCC,NA,NA,526,H,P,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,>200,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,100,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,50,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,12.5,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,12.5,NA,NA,NA,Taniguchi1996,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,NA,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Tavanaee2017,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,511,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AAC,CAC,NA,NA,518,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Telenti1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,509,S,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,514,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,521,L,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,527,L,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,Mycobacterium tuberculosis variant africanum is a biotype of Mycobacterium tuberculosis,Williams1994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,509,S,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,511,L,p,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,519,N,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,521,L,M,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,527,K,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Williams1998,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAG,CAT,NA,NA,510,Q,H,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,CTA,NA,NA,513,Q,L,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAA,AAA,NA,NA,513,Q,K,NA,NA,NA,Isolate,256,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TTC,TTG,NA,NA,514,F,L,NA,NA,NA,Isolate,16,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,ATG,GTG,NA,NA,515,M,V,NA,NA,NA,Isolate,0.063,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,515-517,M D Q,NA,NA,NA,NA,Isolate,256,NA,NA,not a point mutation,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,4,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,8,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GTC,NA,NA,516,D,V,NA,NA,NA,Isolate,32,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,GAG,NA,NA,516,D,E,NA,NA,NA,Isolate,64,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,TAC,NA,NA,516,D,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,GAC,TAC,NA,NA,516,D,Y,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AAC,NA,NA,NA,518,N,NA,NA,NA,NA,Isolate,16,NA,NA,AA deletion at that position,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GGC,NA,NA,526,H,G,NA,NA,NA,Isolate,8,NA,NA,More than one nucleotide differences between Codon_original and mutated,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CAG,NA,NA,526,H,Q,NA,NA,NA,Isolate,8,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CTC,NA,NA,526,H,L,NA,NA,NA,Isolate,16,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CCC,NA,NA,526,H,P,NA,NA,NA,Isolate,256,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CGC,NA,NA,526,H,R,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,CCC,NA,NA,526,H,P,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,TAC,NA,NA,526,H,Y,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,NA,526,H,D,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CGA,AAA,NA,NA,529,R,K,NA,NA,NA,Isolate,16,NA,NA,More than one nucleotide differences between Codon_original and Codon_mutation,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,64,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,128,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,256,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTT,NA,NA,531,S,F,NA,NA,NA,Isolate,256,NA,NA,More than one nucleotide differences between Codon_original and mutated,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTG,NA,NA,531,S,L,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TGG,NA,NA,531,S,W,NA,NA,NA,Isolate,>512,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCG,TTT,NA,NA,531,S,F,NA,NA,NA,Isolate,>512,NA,NA,More than one nucleotide differences between Codon_original and Codon_mutation,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,0.5,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,1,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,8,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CTG,CCG,NA,NA,533,L,P,NA,NA,NA,Isolate,64,NA,NA,NA,Yang1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,511,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,513,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,533,L,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,562,E,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,564,P,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Yolande2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,435,NA,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,Q,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,441,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,445,NA,H,C,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium tuberculosis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,450,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Zeng2021,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mycobacterium yongonense,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,509,E,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Mwangi2022,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,35,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Carter1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,35,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Carter1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,35,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Carter1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,40,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,AA_pos predicted to not exist in E. coli/paper was checked,Carter1994,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,C4267,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,NA,S,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Nolte2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,B5253,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,534,NA,S,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Nolte2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,B4241,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,558,NA,A,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Nolte2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,600,NA,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Nolte2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,NA,H,R,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,548,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,NA,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,NA,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,557,NA,S,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,560,NA,G,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Skoczynska2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,542,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Stefanelli2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Stefanelli2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neisseria meningitidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,552,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Stefanelli2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,509,S,P,NA,NA,NA,Isolate,NA,NA,NA,NA,Aosh2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Aosh2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,W,NA,NA,NA,Isolate,NA,NA,NA,NA,Aosh2003,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,previously known as Rhodococcus equi,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,T,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,508,T,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,516,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,H,D,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,653,Y,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prescottella equi,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,678,N,H,NA,NA,NA,Isolate,NA,NA,NA,NA,Petry2020,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudomonas aeruginosa,PAO1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,152,NA,Q,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Fines2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia aeschlimannii,MC16,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1031,NA,I,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia aeschlimannii,MC16,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,640,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia aeschlimannii,MC16,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,973,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia massiliae,Mtu1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1031,NA,I,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia massiliae,Mtu1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,221,NA,T,I,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia massiliae,Mtu1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,524,NA,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos predicted to not exist in E. coli,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia massiliae,Mtu1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,640,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,the R. massiliae subgroup are naturally  resistance to rifampin,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia massiliae,Mtu1,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,973,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia montanensis,M/5-6,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1031,NA,I,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia montanensis,M/5-6,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,221,NA,T,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia montanensis,M/5-6,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,640,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia montanensis,M/5-6,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,973,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia rhipicephali,3-7-2006,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1031,NA,I,T,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia rhipicephali,3-7-2006,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,221,NA,T,I,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia rhipicephali,3-7-2006,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,524,NA,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia rhipicephali,3-7-2006,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,640,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rickettsia rhipicephali,3-7-2006,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,973,NA,F,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Drancourt1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Riemerella anatipestifer,ATCC11845,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,491,NA,H,N,NA,NA,NA,Isolate,1,NA,NA,NA,Sun2019,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Riemerella anatipestifer,ATCC11845,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,494,NA,R,K,NA,NA,NA,Isolate,256,NA,NA,NA,Sun2019,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,471,NA,D,G,NA,NA,NA,Isolate,NA,NA,NA,NA,Hellmark2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,H,Y,NA,NA,NA,Isolate,>32,NA,NA,NA,Hellmark2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,S,L,NA,NA,NA,Isolate,>32,NA,NA,NA,Hellmark2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,463,NA,S,I,NA,NA,NA,Isolate,8,NA,NA,NA,Villar2011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,H,N,NA,NA,NA,Isolate,2,NA,NA,NA,Villar2011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,H,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Villar2011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,484,NA,R,H,NA,NA,NA,Isolate,256,NA,NA,NA,Villar2011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,527,NA,I,F,NA,NA,NA,Isolate,4,NA,NA,NA,Villar2011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,H,N,NA,NA,NA,Isolate,2,NA,NA,NA,Wichelhaus2002,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus aureus,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,568,NA,Q,K,NA,NA,NA,Isolate,512,NA,NA,NA,Wichelhaus2002,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus epidermidis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,S,F,NA,NA,NA,Isolate,>256,NA,NA,Checked,Wi2018,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Staphylococcus lugdunensis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,471,NA,D,Y,NA,NA,NA,Isolate,NA,NA,NA,NA,Hellmark2009,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,589,NA,Y,F,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,597,NA,R,F,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,608,NA,I,V,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,623,NA,N,S,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,623,NA,N,E,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,624,NA,I,V,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,669,NA,N,D,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,671,NA,Q,K,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,674,NA,Y,E,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,683,NA,A,V,NA,NA,NA,Isolate,4 to >256,NA,NA,NA,Chen2004,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,150,NA,Q,R,NA,NA,NA,Isolate,6,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,150,NA,Q,R,NA,NA,NA,Isolate,2,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,S,P,NA,NA,NA,Isolate,8,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,481,NA,S,P,NA,NA,NA,Isolate,4,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,482,NA,S,P,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,482,NA,S,P,NA,NA,NA,Isolate,16,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,Q,K,NA,NA,NA,Isolate,64,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,Q,K,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,Q,L,NA,NA,NA,Isolate,128,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,486,NA,Q,L,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,489,NA,D,V,NA,NA,NA,Isolate,128,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,489,NA,D,V,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,495,NA,S,F,NA,NA,NA,Isolate,24,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,495,NA,S,F,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,L,NA,NA,NA,Isolate,64,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,L,NA,NA,NA,Isolate,16,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,N,NA,NA,NA,Isolate,12,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,N,NA,NA,NA,Isolate,8,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,S,NA,NA,NA,Isolate,64,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,S,NA,NA,NA,Isolate,16,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,Y,NA,NA,NA,Isolate,128,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,Y,NA,NA,NA,Isolate,32,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,506,NA,L,S,NA,NA,NA,Isolate,12,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,506,NA,L,S,NA,NA,NA,Isolate,8,NA,NA,NA,Ferrandiz2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,415,NA,D,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,415,NA,D,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,425,NA,H,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,523,NA,R,L,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,NA,E,A,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,534,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,549,NA,N,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,550,NA,I,S,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,550,NA,I,V,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,595,NA,N,E,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,597,NA,Q,K,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,600,NA,Y,F,NA,NA,NA,Isolate,NA,NA,NA,NA,Padayachee1999,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCT,TTT,NA,495,NA,S,F,NA,NA,NA,Isolate,>256,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,TCT,TTT,NA,495,NA,S,F,NA,NA,NA,Isolate,>256,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,CAC,GAC,NA,499,NA,H,D,NA,NA,NA,Isolate,>256,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,499,NA,H,D,NA,NA,NA,Isolate,256,NA,NA,NA,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,ATC,AAC,NA,545,NA,I,N,NA,NA,NA,Isolate,1,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AAC,AAA,NA,545,NA,N,K,NA,NA,NA,Isolate,64,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,AAC,AAA,NA,545,NA,N,K,NA,NA,NA,Isolate,96,NA,NA,Could not realized what is wrong,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,I,L,NA,NA,NA,Isolate,0.5,NA,NA,NA,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,I,N,NA,NA,NA,Isolate,1.5,NA,NA,NA,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,I,N,NA,NA,NA,Isolate,0.75,NA,NA,NA,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pneumoniae,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,545,NA,I,N,NA,NA,NA,Isolate,2,NA,NA,NA,StutzmannMeier2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptococcus pyogenes,BM4478,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,522,NA,S,L,NA,NA,NA,Isolate,>256,NA,NA,NA,Damon2002,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces aculeolatus,KCTC 9680,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces albogriseolus,KCTC 9773,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces albus,KCTC 1082,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces ambofaciens,KCTC 9111,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces avidinii,KCTC 9757,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces coelicolor,KCTC 9005,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces flaveolus,KCTC 9022,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces galilaeus,KCTC 1919,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,AA_pos inconsistent with AA_pos_Ecoli,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces lividans,KCTC 1154,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2005,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces phaeochromogenes,KCTC 9763,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Streptomyces spectabilis,KCTC 9218,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,442,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Kim2004a,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema denticola,ATCC 35405,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,Treponema is naturally resistant ro rifampicin,Stamm2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema medium,G7201,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Stamm2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema pallidum,AE001205,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Lee2000,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema pallidum,14,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Stamm2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema phagedenis,NA,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Stamm2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Treponema socranskii,ATCC 35536,NA,rpoB,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,531,S,N,NA,NA,NA,Isolate,NA,NA,NA,NA,Stamm2001,Negin Bolourchi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

@@ -1,0 +1,16 @@
+Species,Observed,Predicted
+Bacillus anthracis,1,1
+Bacillus subtilis,1,1
+Chlamydia trachomatis,0,0
+Deinococcus radiodurans,1,1
+Enterococcus faecium,1,1
+Escherichia coli,1,1
+Mycobacterium tuberculosis,1,1
+Pseudomonas aeruginosa,1,1
+Pseudomonas fluorescens,1,1
+Pseudomonas fulva,1,1
+Pseudomonas mendocina,1,1
+Pseudomonas putida,1,1
+Salmonella enterica,1,1
+Staphylococcus aureus,1,1
+Stutzerimonas stutzeri,1,1
