@@ -1,0 +1,10 @@
+# unsupervisedML 📊  
+Unsupervised analysis of **rifampicin-resistance rpoB mutations**
+
+## Project structure
+├─ data/ # raw & intermediate CSV / FASTA files
+├─ output/ # UMAP plots, heat-maps, cluster tables
+├─ scripts/
+│ ├─ generatemutations.R
+│ └─ unsupervisedML.R # main analysis pipeline
+└─ README.md

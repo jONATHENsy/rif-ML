@@ -1,0 +1,110 @@
+
+Week 24/3/2025
+--------------
+
+Meeting:
+- talked about project plan
+- refined search term for WoS
+- talked about which papers are relevant (mutant screens) vs. not (clinical isolates)
+- MEME: Fridays at 2pm in 08-501
+
+To Dos:
+- Make progress with ASReview
+
+
+Week 09/06/2025
+--------------
+
+Meeting:
+- looked at clustering figure (needs to be improved)
+- looked at data: data for Salmonella all compensatory mutations that needed to be deleted
+- talked about file structure for project: keep everything in one R project
+
+To Dos:
+- clean project structure, with single master R script that calls all other scripts
+- make sure data is clean: all reference sequences present, mutations are all real mutations from mutant screens
+- produce figures summarising the data (upset plot)
+- clustering figures: try different methods (metrics, clustering algorithms)
+
+Record keeping:
+- 10/6/2025: did this or that
+
+
+week 14/07/2025
+Meeting：
+-  talk about using confounder bias/ other methods to distinguish well studied species and others,
+- discuss about basic heatmap and umap results ,find some doubtful species(could have a seq shift problem)
+TO Dos：
+- Searching methods to solve confounder bias problem
+- Re-check google rif mutation docs' data for those doubtful species
+
+
+week 05/08/2025
+Meeting：
+ - Discussed the issue of overcrowding of mutation names on the horizontal axis of the plot.
+- Also discussed whether to modify or remove species with suspected incorrectly constructed mutation sites, such as Vibrio parahaemolyticus.
+-Both professors suggested using self-made dummy data to test the feasibility of the clustering method.
+week 12/08/2025
+TO Dos：
+- create dummydata sets for testing
+-fix X-axis's scale problem and made plot available for zoomed out/in
+-combine finding best clustering method and plot heatmap/umap together
+- removed some doubtful species
+
+week 12/08/2025
+Meeting:
+- looked high freq species/mid-high species' heatmaps and umaps
+- talk about how to solve left margin problem
+-Professor explain and discuss the aquirum vs ocean proble for "unknown" labels and "0"
+ To Dos:
+- fixing left margin on heatmaps plot, 
+-finding the cut point to leave less studied muatation on the plot,
+- read and understand professor's GPT discussion about supervised problems
+
+Week 19/08/2025
+Meeting:
+- talk about repo structure improvement, especially the not proper with project plan's 4 step
+- explain PU learning method used to treat unlabelled data and display some results
+- discuss about "no trustful absence" problem , thats no proper test dataset available
+TO Dos:
+- fix structure problem in repo,try to display as 4 clear part
+- read and learn more about PU-learning+ RF/Logical regression
+- fix previous plot margin problem
+
+Week 26/08/2025
+Meeting:
+- talk about supervised ML output figures,then explained used maskin method
+- discuss about what kind of figure/graph examiers expect to see in the final report
+TO Dos:
+- make boxplot for masked vs unmasked mutations in selected species
+- record and generate more figuresused for final report
+- fix previous plot margin problem
+
+Week 02/09/2025
+Meeting:
+- talk about future processes could be taken into this supervised ML
+- discuss about why some exists mutation is shown in the prediction, then find out they are
+not lab mutant type didn't be included in processed data.
+TO Dos:
+- Try to remove the same mutations in the prediction results as those in the 
+Google file that are already included in the "non-laboratory mutants"
+- start to record evaluations and conclusions for supervised ML results
+- fix previous top30 unsupervised Ml plot margin problem
+
+Week 09/09/2025
+Meeting:
+- talk about prediction result an method of removing non-lab mutant mutations.
+- discuss about what kind of content need to be written into supervisedMl part in final paper
+TO Dos:
+- plot new figures for novel mutations' prediction(without natural isolated/construct)
+- written description and analysis of unsupervised machine learning method and result
+
+Week 18/09/2025
+Meeting:
+- talk about what kind of figures need to keep/select to display in final report/poster.
+- explain the entire supervised Ml process and discuss about future improvement.
+- professor helped to find some problem left in the above figures.
+TO Dos:
+- fix previous X-axis label problem in the candidate mutations plot
+- improve boxplot for maskvsunmask in different species ,let them display in the same coordinate
+- try to find other hidden problem in the exists supervised Ml part.

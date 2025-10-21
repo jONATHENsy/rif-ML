@@ -108,3 +108,46 @@ TO Dos:
 - fix previous X-axis label problem in the candidate mutations plot
 - improve boxplot for maskvsunmask in different species ,let them display in the same coordinate
 - try to find other hidden problem in the exists supervised Ml part.
+
+week 25/09/2025
+meeting:
+- talk about use shiny website to check predicted novel mutations existed or not
+- try to analysis probability of predicted mutation base on codon transfer figure
+- Discuss why Q148rR and H533L is predicted as high possible muttations
+TO DOs:
+
+- write analysis for results of unsupervised ML
+- Try to understand clusters (N,1,2,3)'s meaning
+- write conclusion for why above prediction could happen
+
+Break since 27/09-07/10
+Meeting: No, but keep contact with ALJE group members
+Did:
+- Fixed supervised ML last problem, deleted unnecessary figs
+-Clean Rif-ML repository， move not mainstream scripts to 
+- start the final report draft
+
+Week 11 14/10/2025
+Meeting:
+- Discuss about upsetplot figs of unsupervisedml section in the paper draft
+-delete plenty of figs for high confounder score species ,left only a few to compare with midhigh specues
+-
+To Dos:
+- add gram positive-negative species compare on the last of unsupervised ml section
+- make tables of supervisedml's out put talk about their top candidiates and mask vs unmasked recall difference
+- Try finished result part of paper and booking a seminar time in the week 14
+
+Week 12 21/10/2025
+Meeting:
+- Find main branch has mixed within a new main , this makes the repo very chaos
+- Discuss about problems let in upsetplot of supervisedML part, may be delete the old version
+- Learn and discuss about how to make multiple figs together as a fine good looking new one used in paper
+- Received some suggestions for background breaking down, may focus on introducing ML methods and RIF mechanism
+
+TO dos:
+- Fixed repo structure problem , make only one main branch left in GitHub
+- Try finish methods and results of paper draft
+- Start prepare for Seminar and background of paper
+
+
+

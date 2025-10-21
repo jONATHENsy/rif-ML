@@ -1,6 +1,0 @@
-set,n_rows,n_species
-threshold_orig,152,24
-threshold_novel,28,12
-topk_orig,496,50
-topk_novel_drop,65,47
-topk_novel_refill,357,50

@@ -1,0 +1,25 @@
+Unit,EUCLIDEAN_HDBSCAN,MANHATTAN_HDBSCAN,COSINE_HDBSCAN,EUCLIDEAN_KMEANS,MANHATTAN_KMEANS,COSINE_KMEANS,EUCLIDEAN_DBSCAN,MANHATTAN_DBSCAN,COSINE_DBSCAN,EUCLIDEAN_GMM,MANHATTAN_GMM,COSINE_GMM
+Bacillus anthracis,0,0,0,2,1,1,1,1,1,1,1,1
+Bacillus subtilis,0,0,0,2,1,1,1,1,1,1,1,1
+Brucella abortus,0,0,0,4,2,2,1,1,1,1,1,2
+Brucella suis,0,0,0,2,4,4,1,1,1,1,1,2
+Chlamydia trachomatis,0,0,0,3,1,1,1,1,1,1,1,1
+Deinococcus radiodurans,0,0,0,4,2,2,1,1,1,1,1,2
+Enterococcus faecium,0,0,0,1,1,1,1,1,1,1,1,1
+Escherichia coli,0,0,0,4,3,3,1,1,1,1,1,2
+Legionella bozemanii,0,0,0,4,3,3,1,1,1,1,1,2
+Legionella longbeachae,0,0,0,3,3,4,1,1,1,1,1,2
+Legionella micdadei,0,0,0,4,3,3,1,1,1,1,1,2
+Legionella pneumophila,0,0,0,1,4,2,1,1,1,1,1,2
+Mycobacterium avium,0,0,0,2,4,4,1,1,1,1,1,1
+Mycobacterium tuberculosis,0,0,0,2,1,1,1,1,1,1,1,1
+Neisseria meningitidis,0,0,0,1,4,2,1,1,1,1,1,2
+Paenibacillus agaridevorans,0,0,0,3,3,3,1,1,1,1,1,2
+Pseudomonas aeruginosa,0,0,0,3,2,2,1,1,1,1,1,2
+Pseudomonas putida,0,0,0,1,2,2,1,1,1,1,1,2
+Rhodothermus marinus,0,0,0,2,4,4,1,1,1,1,1,1
+Salmonella enterica,0,0,0,4,2,2,1,1,1,1,1,2
+Salmonella typhimurium,0,0,0,3,4,4,1,1,1,1,1,1
+Staphylococcus aureus,0,0,0,4,1,4,1,1,1,1,1,1
+Vibrio parahaemolyticus,0,0,0,2,1,1,1,1,1,1,1,1
+Vibrio vulnificus,0,0,0,3,4,1,1,1,1,1,1,1
