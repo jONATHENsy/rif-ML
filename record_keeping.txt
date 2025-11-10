@@ -148,6 +148,24 @@ TO dos:
 - Fixed repo structure problem , make only one main branch left in GitHub
 - Try finish methods and results of paper draft
 - Start prepare for Seminar and background of paper
+Week 13 28/10/2025
+Meeting:
+- Talk about what could do to improve logbook/working directory
+-  Ask about what kinds of content need to be provided in Seminar
+TO dos:
+- Try to finish seminar sildes
+- Try finish Introduction of report
+
+Week 14 03/11/2025
+Meeting:
+- Make a practiced seminar report to supervisor
+- Discuss about Figures problem left in results
+
+TO dos:
+- Finish the final report 
+- Change something in Seminar slides
+- Try to receive some comments' from supervisor's
+
 
 
 
