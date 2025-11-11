@@ -1,22 +1,36 @@
+============================================================
+rif-ML — Unsupervised and PU-Learning Pipeline
+============================================================
+
+Overview
+------------------------------------------------------------
+This project analyzes rpoB mutations related to rifampicin resistance
+across many bacterial species. The workflow integrates both unsupervised
+clustering and positive–unlabeled (PU) supervised learning, coordinated
+through a single master script: main.R
+
+------------------------------------------------------------
 Directory Structure
+------------------------------------------------------------
 
 unsupMLproj/
 │
-├─ main.R – Master workflow (downloads, cleaning, analysis)
+├─ main.R                  – Master workflow (downloads, cleaning, analysis)
 │
 ├─ scripts/
-│ ├─ compareandplot.R – (mainstream)Unsupervised clustering and visualization (UMAP + Heatmap)
-│ ├─ compareclustering.R – Clustering comparison across metrics and methods（branch）
-│ ├─ confounderscore.R – Computes per-species research coverage score
-│ ├─ dummytest.R – Dummy dataset test for clustering functions
-│ ├─ generatemutations.R – Generates lab and non-lab mutation tables
-│ ├─ packages.R – Installs and loads all required packages
-│ ├─ pulearning.R – (mainstream)PU-learning (supervised) analysis and plotting
+│   ├─ compareandplot.R     – Unsupervised clustering and visualization (UMAP + Heatmap)
+│   ├─ compareclustering.R  – test clustering comparison across metrics and methods
+│   ├─ confounderscore.R    – Computes per-species research coverage score
+│   ├─ dummytest.R          – Dummy dataset test for clustering functions
+│   ├─ generatemutations.R  – Generates lab and non-lab mutation tables
+│   ├─ packages.R           – Ensure all required packages can be installed
+│   ├─ pulearning.R         – PU-learning (supervised) analysis and plotting
 │
-├─ data/ – Raw and intermediate CSV / RDS files
-├─ output/ – Generated results (labmuts.csv, nonlabmuts.csv, coordinates, etc.)
-├─ figures/ – (UMAP, heatmaps, UpSet, etc.)
-└─ reference/ – Reference FASTA and scpecie/strain info
+├─ data/                   – Raw and intermediate CSV / RDS files(include specie/strain rference data)
+├─ output/                 – Generated and saved data/ results (labmuts.csv, nonlabmuts.csv, coordinates, etc.)
+├─ figures/                – AUMAP, heatmaps, UpSet, etc.
+└─ reference/              – Reference FASTA 
+
 ------------------------------------------------------------
 Main Script: main.R
 ------------------------------------------------------------
